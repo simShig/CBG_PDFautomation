@@ -7,7 +7,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-ffff= "xvcv"
 isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
 # oxyUser = "USERNAME"
 # oxyPW = "PASSWORD"

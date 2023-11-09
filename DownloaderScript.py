@@ -7,6 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
+ffff= "xvcv"
 isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
 # oxyUser = "USERNAME"
 # oxyPW = "PASSWORD"
@@ -31,7 +32,7 @@ def getBibtex(row, rowNum):  # rowNum > bibtex
 
 
 def checkResponseStatus(response):
-    prntL(f'response code is: {response.status_code}')
+    logging.info(f'response code is: {response.status_code}')
     if response.status_code == 403:
         prntL("Bot blocked (403 Forbidden)")
     if "CAPTCHA" in response.text:
@@ -42,7 +43,6 @@ def checkResponseStatus(response):
         prntL("Rate limiting detected")
     if "captcha" in response.text.lower():
         prntL("\t!!! You are facing RECAPTCHA !!!")
-
 
 def find_pdf_links(bibtex):  # bibtex > pdfUrl
     # Make a request to Google Scholar with the 'bibtex' variable
@@ -64,6 +64,7 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
         return [], False
 
 
+
 def download_pdf(pdfUrl, articleName):
     articleName = articleName.replace(':', '_')
     os.makedirs(output_dir_path, exist_ok=True)
@@ -74,16 +75,16 @@ def download_pdf(pdfUrl, articleName):
     file_path = folder_path + articleName + '.pdf'
 
     # Send a GET request to the URL
-    urlResp = requests.get(pdfUrl)
+    urlResp = requests.get(pdfUrl)              #urlResponse
 
     # Check if the request was successful (status code 200)
     if urlResp.status_code == 200:
         # Open the file in binary write mode and write the content
         with open(file_path, 'wb') as f:
             f.write(urlResp.content)
-        prntL(f'PDF saved to: {file_path}')
+        prntL(f'\tPDF saved to: {file_path}')
     else:
-        prntL(f'Failed to download PDF. Status code: {urlResp.status_code}')
+        prntL(f'\tFailed to download PDF. Status code: {urlResp.status_code}')
 
 
 def setup_logging():

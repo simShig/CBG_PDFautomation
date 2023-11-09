@@ -6,22 +6,28 @@ import datetime
 import requests
 from bs4 import BeautifulSoup
 
-
-isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
-# oxyUser = "USERNAME"
-# oxyPW = "PASSWORD"
-# prxStr = f'http://{oxyUser}:{oxyPW}@unblock.oxylabs.io:60000'
-# proxy = prxStr
-# proxies = {
-#     'http': proxy,
-#     'https': proxy
-# }
 #
 #
 excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskAll.xlsx'
 output_dir_path = fr'C:\Users\Simon\Desktop\CBG\PDFs'
 logs_dir_path = fr'C:\Users\Simon\Desktop\CBG\LogFiles'
+oxyUser = "shnooker123"
+oxyPW = "Ss2161992"
+
+proxies = None
 log_file = None
+isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
+
+
+def startProxy(username, password):
+    global proxies
+    prxStr = f'http://{username}:{password}@unblock.oxylabs.io:60000'
+    proxy = prxStr
+    proxies = {
+        'http': proxy,
+        'https': proxy
+    }
+    prntL(f'\tstarting proxy: {proxy}')
 
 
 def getBibtex(row, rowNum):  # rowNum > bibtex
@@ -43,10 +49,15 @@ def checkResponseStatus(response):
     if "captcha" in response.text.lower():
         prntL("\t!!! You are facing RECAPTCHA !!!")
 
+
 def find_pdf_links(bibtex):  # bibtex > pdfUrl
     # Make a request to Google Scholar with the 'bibtex' variable
     page = f'https://scholar.google.com/scholar?q={bibtex}'
-    response = requests.get(page)  # , proxies=proxies, verify=False)
+    if proxies:
+        response = requests.request('GET', page, verify=False, proxies=proxies)  # , proxies=proxies, verify=False)
+        print(response.text)
+    else:
+        response = requests.get(page)
     checkResponseStatus(response)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -63,7 +74,6 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
         return [], False
 
 
-
 def download_pdf(pdfUrl, articleName):
     articleName = articleName.replace(':', '_')
     os.makedirs(output_dir_path, exist_ok=True)
@@ -74,7 +84,10 @@ def download_pdf(pdfUrl, articleName):
     file_path = folder_path + articleName + '.pdf'
 
     # Send a GET request to the URL
-    urlResp = requests.get(pdfUrl)              #urlResponse
+    if proxies:
+        urlResp = requests.request('GET', pdfUrl, proxies=proxies, verify=False)  # urlResponse
+    else:
+        urlResp = requests.get(pdfUrl)
 
     # Check if the request was successful (status code 200)
     if urlResp.status_code == 200:
@@ -112,50 +125,14 @@ def close_logging():
         log_file = None
 
 
-#
-# # ~~~~~~~~~~~~~Start OF LOG STUFF~~~~~~~~~~~~~~~~~~~~~
-# class PrintToLogHandler(logging.Handler):
-#     def emit(self, record):
-#         log_entry = self.format(record)
-#         print(log_entry)
-#         with open(os.path.join(self.log_dir, self.log_file), 'a') as log_file:
-#             log_file.write(log_entry + '\n')
-#
-#
-# def setup_logging(log_dir):
-#     os.makedirs(log_dir, exist_ok=True)
-#     log_str = f"log_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
-#     log_file = os.path.join(log_dir, log_str)
-#
-#     logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s [%(levelname)s] - %(message)s')
-#
-#     print_to_log_handler = PrintToLogHandler()
-#     print_to_log_handler.setFormatter(logging.Formatter('%(asctime)s [%(levelname)s] - %(message)s'))
-#     print_to_log_handler.setLevel(logging.INFO)
-#     print_to_log_handler.log_dir = log_dir  # Assign the log directory to the handler
-#     print_to_log_handler.log_file = log_str  # Assign the log file name to the handler
-#
-#     root_logger = logging.getLogger()
-#     root_logger.addHandler(print_to_log_handler)
-#
-#
-# def close_logging():
-#     root_logger = logging.getLogger()
-#     for handler in root_logger.handlers[:]:
-#         root_logger.removeHandler(handler)
-#         handler.close()
-#
-
 def prntL(someString):
     logging.info(someString)
     print(someString)
 
 
-# ~~~~~~~~~~~~~END OF LOG STUFF~~~~~~~~~~~~~~~~~~~~~
-
-
 def main():
     setup_logging()
+    startProxy(oxyUser, oxyPW)
     prntL("starting")
     wb = openpyxl.load_workbook(excel_file_path)
     sheet = wb.active
@@ -178,3 +155,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# curl -k -x unblock.oxylabs.io:60000 -U "shnooker123:Ss2161992" "https://ip.oxylabs.io"

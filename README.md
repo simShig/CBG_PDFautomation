@@ -1,6 +1,6 @@
 # CBG_PDFautomation
 
-Before starting:
+### Before starting:
 1. update the next PATH variables to match your system:
   
        excel_file_path
@@ -28,6 +28,16 @@ Before starting:
         curl --insecure --proxy unblock.oxylabs.io:60000 --proxy-user "USERNAME:PASSWORD" https://ip.oxylabs.io
 
    The output should be a random IP.
+
+3. install relevant libraries
+
+       pip install openpyxl
+       pip install requests
+       pip install beautifulsoup4
+### prepare your input data:
+make sure you use the next [Excel Sheet Format](https://github.com/simShig/CBG_PDFautomation/files/13323088/ExcelSheetFormat.xlsx)  as your article database (in order for the code to access the right columns etc...)
+  
+ 
 
 
 ## TBD:

@@ -35,15 +35,18 @@
        pip install requests
        pip install beautifulsoup4
 ### prepare your input data:
-make sure you use the next [Excel Sheet Format](https://github.com/simShig/CBG_PDFautomation/files/13323088/ExcelSheetFormat.xlsx)  as your article database (in order for the code to access the right columns etc...)
-  
+Use the next [Excel Sheet Format](https://github.com/simShig/CBG_PDFautomation/files/13323088/ExcelSheetFormat.xlsx)  as your article database (in order for the code to access the right columns etc...)
+
+Make sure you remove duplicates (regarding the next columns - Bibtex, Title)
+
+
  
 
 
 ## TBD:
 - [ V ] handling CAPTHA - rotating-ip proxy implemented
 - try to implement proxy stuff on response(urlPdf) (to prevent bot-blocking on pdf openning)
-- catching URL - needs to checked (need to check missed out articles)
+- catching URL - needs to checked (need to check missed out articles) - handle adjustments for specific domaind - ScienceDirect,
 - saving file - works fine mostly (need to check missed out articles)
 - marking progress in table - yet to be done, shows row on printing
 - finishing a whole run - check 

@@ -20,6 +20,8 @@ isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (t
 
 
 def startProxy(username, password):
+    from requests.packages.urllib3.exceptions import InsecureRequestWarning
+    requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
     global proxies
     prxStr = f'http://{username}:{password}@unblock.oxylabs.io:60000'
     proxy = prxStr
@@ -40,12 +42,10 @@ def checkResponseStatus(response):
     logging.info(f'response code is: {response.status_code}')
     if response.status_code == 403:
         prntL("Bot blocked (403 Forbidden)")
-    if "CAPTCHA" in response.text:
-        prntL("CAPTCHA encountered in response content")
-    if "x-captcha" in response.headers or "x-bot-detection" in response.headers:
-        prntL("Bot blocking detected in response headers")
-    if "Retry-After" in response.headers or "Rate-Limit" in response.headers:
-        prntL("Rate limiting detected")
+    if response.status_code == 418:
+        prntL("418 teapot <=> Bot blocked (like 403 Forbidden)")
+    if response.status_code == 550:
+        prntL("The recipient is blocking your email on the recipient's email server (550 Forbidden)")
     if "captcha" in response.text.lower():
         prntL("\t!!! You are facing RECAPTCHA !!!")
 
@@ -55,7 +55,6 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
     page = f'https://scholar.google.com/scholar?q={bibtex}'
     if proxies:
         response = requests.request('GET', page, verify=False, proxies=proxies)  # , proxies=proxies, verify=False)
-        print(response.text)
     else:
         response = requests.get(page)
     checkResponseStatus(response)
@@ -74,8 +73,10 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
         return [], False
 
 
-def download_pdf(pdfUrl, articleName):
-    articleName = articleName.replace(':', '_')
+def download_pdf(pdfUrl, articleName, rNum):
+    articleName = ''.join(char for char in articleName if char.isalpha())       ##remove non-alphabetical chars
+    articleName=f'{rNum}_{articleName}'
+    print("\t\t"+articleName)
     os.makedirs(output_dir_path, exist_ok=True)
     # Define the path to the folder where you want to save the PDF
     folder_path = output_dir_path + '\\'
@@ -84,20 +85,25 @@ def download_pdf(pdfUrl, articleName):
     file_path = folder_path + articleName + '.pdf'
 
     # Send a GET request to the URL
-    if proxies:
-        urlResp = requests.request('GET', pdfUrl, proxies=proxies, verify=False)  # urlResponse
-    else:
-        urlResp = requests.get(pdfUrl)
+    # if proxies:
+    #     urlResp = requests.request('GET', pdfUrl, proxies=proxies, verify=False)  # urlResponse
+    # else:
+    try:
+        # Send a GET request to the URL with a timeout
+        urlResp = requests.get(pdfUrl, timeout=4)  # timout (secs) for loading the pdfUrl
 
-    # Check if the request was successful (status code 200)
-    if urlResp.status_code == 200:
-        # Open the file in binary write mode and write the content
-        with open(file_path, 'wb') as f:
-            f.write(urlResp.content)
-        prntL(f'\tPDF saved to: {file_path}')
-    else:
-        prntL(f'\tFailed to download PDF. Status code: {urlResp.status_code}')
-
+        # Check if the request was successful (status code 200)
+        if urlResp.status_code == 200:
+            # Open the file in binary write mode and write the content
+            with open(file_path, 'wb') as f:
+                f.write(urlResp.content)
+            prntL(f'\t[V] PDF saved to: {file_path}')
+        else:
+            prntL(f'\n\t[X] !!!~Failed to download PDF on row {rNum}. Status code: {urlResp.status_code}\n')
+    except requests.Timeout:
+        prntL(f'\n\t[X] !!!~Request timed out while downloading PDF on row {rNum}.\n')
+    except requests.RequestException as e:
+        prntL(f'\n\t[X] !!!~An error occurred while downloading PDF on row {rNum}: {e}\n')
 
 def setup_logging():
     global log_file
@@ -142,10 +148,16 @@ def main():
         rowNum += 1
         bibtex = getBibtex(row, rowNum)
         pdf_links, isNameDotPDF = find_pdf_links(bibtex)  ##method updates both variables
+        firstTimeOnly = True
         for pdf_link in pdf_links:
-            pdf_url = pdf_link['href']
-            prntL(pdf_url)
-            download_pdf(pdf_url, row[7])
+            if firstTimeOnly:
+                pdf_url = pdf_link['href']
+                prntL(pdf_url)
+                download_pdf(pdf_url, row[7], rowNum)
+                firstTimeOnly = False
+            else:
+                pdf_url = pdf_link['href']
+                prntL(f'another URL found:  {pdf_url}')
         time.sleep(1)
 
     #     ~~finishings:~~
@@ -157,4 +169,3 @@ if __name__ == "__main__":
     main()
 
 
-# curl -k -x unblock.oxylabs.io:60000 -U "shnooker123:Ss2161992" "https://ip.oxylabs.io"

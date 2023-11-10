@@ -116,6 +116,7 @@ def setup_logging():
     logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s [%(levelname)s] - %(message)s')
 
 
+
 def close_logging():
     global log_file
     if log_file is not None:

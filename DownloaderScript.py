@@ -1,3 +1,4 @@
+import atexit
 import time
 import openpyxl
 import os
@@ -8,7 +9,7 @@ from bs4 import BeautifulSoup
 
 #
 #
-excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskAll.xlsx'
+excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskDebug.xlsx'
 output_dir_path = fr'C:\Users\Simon\Desktop\CBG\PDFs'
 logs_dir_path = fr'C:\Users\Simon\Desktop\CBG\LogFiles'
 oxyUser = "shnooker123"
@@ -17,6 +18,7 @@ oxyPW = "Ss2161992"
 proxies = None
 log_file = None
 isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
+
 
 
 def startProxy(username, password):
@@ -73,10 +75,28 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
         return [], False
 
 
-def download_pdf(pdfUrl, articleName, rNum):
-    articleName = ''.join(char for char in articleName if char.isalpha())       ##remove non-alphabetical chars
-    articleName=f'{rNum}_{articleName}'
-    print("\t\t"+articleName)
+def markAsDownloaded(wasDownloaded, pdfUrl, rNum, sheet):
+    needVpn = False
+
+    # Assuming that the tuple index 21 corresponds to column "V"
+    sheet.cell(row=rNum, column=22, value=pdfUrl)  # article PDF link
+
+    if wasDownloaded:
+        sheet.cell(row=rNum, column=23, value="V")  # wasDownloaded?
+
+    blocked_sites = ["sciencedirect", "researchgate", "ieeexplore", "aiia.csd"]  # Add more sites as needed
+    if any(site in pdfUrl.lower() for site in blocked_sites):
+        needVpn = True
+        sheet.cell(row=rNum, column=24, value="V")  # need BGU-VPN?
+    prntL(f'\t\tMarkedInEXCEL: wasDownloaded?{wasDownloaded}, need VPN? {needVpn} ')
+    global wb
+    wb.save(excel_file_path)
+
+
+def download_pdf(pdfUrl, articleName, rNum):  # returns 1 if downloaded, -1 if failed
+    articleName = ''.join(char for char in articleName if char.isalpha())  # remove non-alphabetical chars
+    articleName = f'{rNum}_{articleName}'
+    print("\t\t" + articleName)
     os.makedirs(output_dir_path, exist_ok=True)
     # Define the path to the folder where you want to save the PDF
     folder_path = output_dir_path + '\\'
@@ -97,13 +117,26 @@ def download_pdf(pdfUrl, articleName, rNum):
             # Open the file in binary write mode and write the content
             with open(file_path, 'wb') as f:
                 f.write(urlResp.content)
-            prntL(f'\t[V] PDF saved to: {file_path}')
+
+            # Check the file size
+            file_size = os.path.getsize(file_path)
+            if file_size < 100:
+                prntL(
+                    f'\n\t[X] !!!~Downloaded file on row {rNum} is too small (size: {file_size} bytes). Possible corruption.\n')
+                return -1
+            else:
+                prntL(f'\t[V] PDF saved to: {file_path}')
+                return 1
         else:
             prntL(f'\n\t[X] !!!~Failed to download PDF on row {rNum}. Status code: {urlResp.status_code}\n')
+            return -1
     except requests.Timeout:
         prntL(f'\n\t[X] !!!~Request timed out while downloading PDF on row {rNum}.\n')
+        return -1
     except requests.RequestException as e:
         prntL(f'\n\t[X] !!!~An error occurred while downloading PDF on row {rNum}: {e}\n')
+        return -1
+
 
 def setup_logging():
     global log_file
@@ -114,7 +147,6 @@ def setup_logging():
     log_file = os.path.join(logs_dir_path + '\\', log_str)
     print(log_file)
     logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s [%(levelname)s] - %(message)s')
-
 
 
 def close_logging():
@@ -137,36 +169,58 @@ def prntL(someString):
     print(someString)
 
 
-def main():
-    setup_logging()
-    startProxy(oxyUser, oxyPW)
-    prntL("starting")
-    wb = openpyxl.load_workbook(excel_file_path)
-    sheet = wb.active
-    rowNum = 1
-    for row in sheet.iter_rows(min_row=2, values_only=True):
-        # global rowNum
-        rowNum += 1
-        bibtex = getBibtex(row, rowNum)
-        pdf_links, isNameDotPDF = find_pdf_links(bibtex)  ##method updates both variables
-        firstTimeOnly = True
-        for pdf_link in pdf_links:
-            if firstTimeOnly:
-                pdf_url = pdf_link['href']
-                prntL(pdf_url)
-                download_pdf(pdf_url, row[7], rowNum)
-                firstTimeOnly = False
-            else:
-                pdf_url = pdf_link['href']
-                prntL(f'another URL found:  {pdf_url}')
-        time.sleep(1)
-
-    #     ~~finishings:~~
-    close_logging()
+def cleanup():
+    prntL("~~~~in cleanup")
+    global wb
+    # if 'wb' in locals():
+    prntL("~~~~~in if locals()")
+    wb.save(excel_file_path)
     wb.close()
+    close_logging()
 
+
+# Register the cleanup function with atexit
+atexit.register(cleanup)
+
+
+def main():
+    try:
+        setup_logging()
+        startProxy(oxyUser, oxyPW)
+        prntL("starting")
+        global wb
+        wb = openpyxl.load_workbook(excel_file_path)
+        sheet = wb.active
+        rowNum = 1
+        for row in sheet.iter_rows(min_row=2, values_only=True):
+            rowNum += 1
+            bibtex = getBibtex(row, rowNum)
+            pdf_links, isNameDotPDF = find_pdf_links(bibtex)
+            firstTimeOnly = True
+            for pdf_link in pdf_links:
+                if firstTimeOnly:
+                    pdf_url = pdf_link['href']
+                    prntL(pdf_url)
+                    try:
+                        if download_pdf(pdf_url, row[7], rowNum) == 1:
+                            logging.info(f'successful downloading')
+                            markAsDownloaded(True, pdf_url, rowNum, sheet)
+                        else:
+                            logging.info(f'download failed')
+                            markAsDownloaded(False, pdf_url, rowNum, sheet)
+                    except Exception as e:
+                        logging.error(f'Exception while processing PDF on row {rowNum}: {e}')
+                    finally:
+                        firstTimeOnly = False
+                else:
+                    pdf_url = pdf_link['href']
+                    prntL(f'another URL found:  {pdf_url}')
+            time.sleep(1)
+        prntL(f'~~FINISHED RUNNING {"with" if proxies else "WITHOUT"} proxies')
+    except KeyboardInterrupt:
+        prntL("Script execution manually interrupted.")
+    except Exception as e:
+        logging.error(f'An unexpected exception occurred: {e}')
 
 if __name__ == "__main__":
     main()
-
-

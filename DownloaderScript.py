@@ -17,6 +17,8 @@ oxyPW = "Ss2161992"
 
 proxies = None
 log_file = None
+blocked_sites = ["sciencedirect", "researchgate", "aiia.csd", "link.springer","onlinelibrary.wiley"]  # Add more sites as needed - ieeexplore
+
 isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
 
 
@@ -84,11 +86,10 @@ def markAsDownloaded(wasDownloaded, pdfUrl, rNum, sheet):
     if wasDownloaded:
         sheet.cell(row=rNum, column=23, value="V")  # wasDownloaded?
 
-    blocked_sites = ["sciencedirect", "researchgate", "ieeexplore", "aiia.csd"]  # Add more sites as needed
     if any(site in pdfUrl.lower() for site in blocked_sites):
         needVpn = True
         sheet.cell(row=rNum, column=24, value="V")  # need BGU-VPN?
-    prntL(f'\t\tMarkedInEXCEL: wasDownloaded?{wasDownloaded}, need VPN? {needVpn} ')
+    # prntL(f'\t\tMarkedInEXCEL: wasDownloaded?{wasDownloaded}, need VPN? {needVpn} ')
     global wb
     wb.save(excel_file_path)
 
@@ -96,24 +97,55 @@ def markAsDownloaded(wasDownloaded, pdfUrl, rNum, sheet):
 def download_pdf(pdfUrl, articleName, rNum):  # returns 1 if downloaded, -1 if failed
     articleName = ''.join(char for char in articleName if char.isalpha())  # remove non-alphabetical chars
     articleName = f'{rNum}_{articleName}'
-    print("\t\t" + articleName)
+    prntL("\t\t" + articleName)
     os.makedirs(output_dir_path, exist_ok=True)
     # Define the path to the folder where you want to save the PDF
     folder_path = output_dir_path + '\\'
 
     # Combine the folder path and the filename to create the full file path
     file_path = folder_path + articleName + '.pdf'
-
+    tryWithSciHub = False       #when managing knowen issues
     # Send a GET request to the URL
     # if proxies:
     #     urlResp = requests.request('GET', pdfUrl, proxies=proxies, verify=False)  # urlResponse
     # else:
     try:
+        if any(site in pdfUrl.lower() for site in blocked_sites):
+            tryWithSciHub = True
+            pdfUrl = 'https://sci-hub.se/' + pdfUrl
+            prntL("@@@@running a try with SciHub")
         # Send a GET request to the URL with a timeout
         urlResp = requests.get(pdfUrl, timeout=4)  # timout (secs) for loading the pdfUrl
 
         # Check if the request was successful (status code 200)
         if urlResp.status_code == 200:
+            if tryWithSciHub:
+                soup = BeautifulSoup(urlResp.content, 'html.parser')
+
+                if "Unfortunately, Sci-Hub" in urlResp.text:
+                    prntL(f'\n\t[X] !!!~An error occurred while downloading PDF on row {rNum}:\n'
+                          f'the link is not available on sci-hub')
+                    return -1
+
+                # Find the <embed> tag within the <div id="article"> section
+                embed_tag = soup.find('div', id='article').find('embed')
+
+                # Extract the PDF URL from the src attribute of the <embed> tag
+                pdf_url_relative = embed_tag['src']
+
+                # Create the absolute PDF URL by concatenating with the base URL
+                base_url = 'https://sci-hub.se/'
+                pdf_url = base_url + pdf_url_relative
+
+                # Download the PDF using the extracted URL
+                pdf_resp = requests.get(pdf_url, timeout=10)
+                if pdf_resp.status_code == 200:
+                    urlResp=pdf_resp
+                else:
+                    prntL(f'\n\t[X] !!!~An error occurred while downloading PDF on row {rNum}:\n'
+                          f'the pdfResp status code (from SciHub) is: {pdf_resp.status_code}')
+                    return -1
+
             # Open the file in binary write mode and write the content
             with open(file_path, 'wb') as f:
                 f.write(urlResp.content)
@@ -183,10 +215,20 @@ def cleanup():
 atexit.register(cleanup)
 
 
+def needToDownloadRow(row):
+    if row[22] == "V":  #isDownloaded
+        return False
+    if row[21] == "":   #no link yet
+        return True
+    if row[23] == "V" and proxies is None:   #needVPN & no proxies
+        return True
+    return True
+
+
 def main():
     try:
         setup_logging()
-        startProxy(oxyUser, oxyPW)
+        # startProxy(oxyUser, oxyPW)
         prntL("starting")
         global wb
         wb = openpyxl.load_workbook(excel_file_path)
@@ -194,6 +236,8 @@ def main():
         rowNum = 1
         for row in sheet.iter_rows(min_row=2, values_only=True):
             rowNum += 1
+            if not needToDownloadRow(row):
+                continue
             bibtex = getBibtex(row, rowNum)
             pdf_links, isNameDotPDF = find_pdf_links(bibtex)
             firstTimeOnly = True

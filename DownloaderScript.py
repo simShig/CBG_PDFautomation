@@ -9,15 +9,15 @@ from bs4 import BeautifulSoup
 
 #
 #
-excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskDebug.xlsx'
+excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskDebug2.xlsx'
 output_dir_path = fr'C:\Users\Simon\Desktop\CBG\PDFs'
 logs_dir_path = fr'C:\Users\Simon\Desktop\CBG\LogFiles'
-oxyUser = "shnooker123"
-oxyPW = "Ss2161992"
+oxyUser = "RaCheck"
+oxyPW = "RaCheck123"
 
 proxies = None
 log_file = None
-blocked_sites = ["sciencedirect", "researchgate", "aiia.csd", "link.springer","onlinelibrary.wiley"]  # Add more sites as needed - ieeexplore
+blocked_sites = ["sciencedirect","ieeexplore", "aiia.csd", "link.springer","onlinelibrary.wiley"]  # Add more sites as needed -  "researchgate"
 
 isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
 
@@ -52,6 +52,8 @@ def checkResponseStatus(response):
         prntL("The recipient is blocking your email on the recipient's email server (550 Forbidden)")
     if "captcha" in response.text.lower():
         prntL("\t!!! You are facing RECAPTCHA !!!")
+        return True
+    return False
 
 
 def find_pdf_links(bibtex):  # bibtex > pdfUrl
@@ -59,9 +61,12 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
     page = f'https://scholar.google.com/scholar?q={bibtex}'
     if proxies:
         response = requests.request('GET', page, verify=False, proxies=proxies)  # , proxies=proxies, verify=False)
+        if checkResponseStatus(response):   ##if i need to try again because i got CAPTHCA
+            prntL("second try after RECAPTCHA (bad proxy):")
+            response = requests.request('GET', page, verify=False, proxies=proxies)  # , proxies=proxies, verify=False)
     else:
         response = requests.get(page)
-    checkResponseStatus(response)
+        checkResponseStatus(response)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
         selectors = ['a[href$=".pdf"]', 'a[href*="/pdf"]', 'a[href*="/article/"]', 'a[href*="/download"]']
@@ -88,11 +93,25 @@ def markAsDownloaded(wasDownloaded, pdfUrl, rNum, sheet):
 
     if any(site in pdfUrl.lower() for site in blocked_sites):
         needVpn = True
-        sheet.cell(row=rNum, column=24, value="V")  # need BGU-VPN?
+        sheet.cell(row=rNum, column=24, value="V")  # is handled by sci-hub?
     # prntL(f'\t\tMarkedInEXCEL: wasDownloaded?{wasDownloaded}, need VPN? {needVpn} ')
     global wb
     wb.save(excel_file_path)
 
+
+def twistBlockedUrl(pdfUrl):        ##add special twists if encounter mor problematiqe domains.
+    newUrl = 'https://sci-hub.se/'
+    if "ieeexplore" in pdfUrl.lower():
+        base_name = os.path.splitext(os.path.basename(pdfUrl))[0]
+        # Extract the desired part from the base name
+        desired_part_with_zeros = base_name.split('/')[-1]
+        # Remove leading zeros
+        desired_part_without_zeros = str(int(desired_part_with_zeros))
+        newUrl = 'https://sci-hub.se/https://ieeexplore.ieee.org/document/'+desired_part_without_zeros  #apply changes for IEEExplore
+    else:
+        newUrl = newUrl+pdfUrl
+    print(f'\tnew URL is: {newUrl}')
+    return newUrl
 
 def download_pdf(pdfUrl, articleName, rNum):  # returns 1 if downloaded, -1 if failed
     articleName = ''.join(char for char in articleName if char.isalpha())  # remove non-alphabetical chars
@@ -112,7 +131,7 @@ def download_pdf(pdfUrl, articleName, rNum):  # returns 1 if downloaded, -1 if f
     try:
         if any(site in pdfUrl.lower() for site in blocked_sites):
             tryWithSciHub = True
-            pdfUrl = 'https://sci-hub.se/' + pdfUrl
+            pdfUrl = twistBlockedUrl(pdfUrl)
             prntL("@@@@running a try with SciHub")
         # Send a GET request to the URL with a timeout
         urlResp = requests.get(pdfUrl, timeout=4)  # timout (secs) for loading the pdfUrl
@@ -154,13 +173,14 @@ def download_pdf(pdfUrl, articleName, rNum):  # returns 1 if downloaded, -1 if f
             file_size = os.path.getsize(file_path)
             if file_size < 100:
                 prntL(
-                    f'\n\t[X] !!!~Downloaded file on row {rNum} is too small (size: {file_size} bytes). Possible corruption.\n')
+                    f'\n\t[X] ~ Downloaded file on row {rNum} is too small (size: {file_size} bytes). Possible corruption.\n')
                 return -1
             else:
                 prntL(f'\t[V] PDF saved to: {file_path}')
                 return 1
         else:
-            prntL(f'\n\t[X] !!!~Failed to download PDF on row {rNum}. Status code: {urlResp.status_code}\n')
+            prntL(f'\n\t[X] !!!~Failed to download PDF on row {rNum}. Status code: {urlResp.status_code}. For further examination check the log.\n')
+            logging.info(urlResp.text)
             return -1
     except requests.Timeout:
         prntL(f'\n\t[X] !!!~Request timed out while downloading PDF on row {rNum}.\n')
@@ -220,15 +240,15 @@ def needToDownloadRow(row):
         return False
     if row[21] == "":   #no link yet
         return True
-    if row[23] == "V" and proxies is None:   #needVPN & no proxies
-        return True
+    # if row[23] == "V" and proxies is None:   #needVPN & no proxies
+    #     return True
     return True
 
 
 def main():
     try:
         setup_logging()
-        # startProxy(oxyUser, oxyPW)
+        startProxy(oxyUser, oxyPW)
         prntL("starting")
         global wb
         wb = openpyxl.load_workbook(excel_file_path)

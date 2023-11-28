@@ -10,9 +10,9 @@
        logs_dir_path
 
 2. setup rotating ip mechanism:
-    1. create an account on oxylabs webUnBlocker (free 1-week trial):
+    1. create an account on [oxylabs Residential-Proxies](https://oxylabs.io/products/residential-proxy-pool)
 
-   https://oxylabs.io/products/web-unblocker
+   
    
     2. change Username and Password variables to match your subscription
 

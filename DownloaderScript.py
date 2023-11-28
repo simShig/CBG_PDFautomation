@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 
 #
 #
-excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskDebug2.xlsx'
+excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskAll.xlsx'
 output_dir_path = fr'C:\Users\Simon\Desktop\CBG\PDFs'
 logs_dir_path = fr'C:\Users\Simon\Desktop\CBG\LogFiles'
 oxyUser = "RaCheck"
@@ -20,6 +20,8 @@ log_file = None
 blocked_sites = ["sciencedirect","ieeexplore", "aiia.csd", "link.springer","onlinelibrary.wiley"]  # Add more sites as needed -  "researchgate"
 
 isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
+
+# indices = [0,1,2,4,7]
 
 
 
@@ -36,9 +38,13 @@ def startProxy(username, password):
     prntL(f'\tstarting proxy: {proxy}')
 
 
-def getBibtex(row, rowNum):  # rowNum > bibtex
-    prntL(f"row num: {rowNum} [by {row[0]} {row[1]}, article name: {row[4]} ~ {row[7]}] ")
-    bibtex = row[10]
+def getBibtex(row, rowNum, name_index,last_name_index, attackDefence_index, title_index, bibtex_index, pdfLink_index):  # rowNum > bibtex
+    prntL(f"row num: {rowNum} [by {row[name_index]} {row[last_name_index]}, article name: {row[attackDefence_index]} ~ {row[title_index]}] ")
+    bibtex = row[bibtex_index]
+    if bibtex is None:
+        bibtex = row[title_index]
+    if bibtex is None:
+        bibtex = row[pdfLink_index]
     return bibtex
 
 
@@ -114,6 +120,8 @@ def twistBlockedUrl(pdfUrl):        ##add special twists if encounter mor proble
     return newUrl
 
 def download_pdf(pdfUrl, articleName, rNum):  # returns 1 if downloaded, -1 if failed
+    if articleName==None:   #in case no title was given
+        articleName = "NoArticleTitle"
     articleName = ''.join(char for char in articleName if char.isalpha())  # remove non-alphabetical chars
     articleName = f'{rNum}_{articleName}'
     prntL("\t\t" + articleName)
@@ -235,14 +243,17 @@ def cleanup():
 atexit.register(cleanup)
 
 
-def needToDownloadRow(row):
-    if row[22] == "V":  #isDownloaded
+def needToDownloadRow(isDownloadedCell,PDFlinkCell):
+    if isDownloadedCell == "V":  #isDownloaded
         return False
-    if row[21] == "":   #no link yet
+    if PDFlinkCell == None:   #no link yet
         return True
-    # if row[23] == "V" and proxies is None:   #needVPN & no proxies
-    #     return True
     return True
+
+def initializeIndices(sheet):
+    header_row = next(sheet.iter_rows(min_row=1, max_row=1, values_only=True))
+    column_indices = {name: index for index, name in enumerate(header_row)}
+    return column_indices
 
 
 def main():
@@ -253,12 +264,24 @@ def main():
         global wb
         wb = openpyxl.load_workbook(excel_file_path)
         sheet = wb.active
+        column_indices = initializeIndices(sheet)
+        # relevant indices (for modular use of excel sheets):
+        name_index = column_indices.get("First Name")
+        last_name_index = column_indices.get("Last Name")
+        title_index = column_indices.get("Title")
+        bibtex_index = column_indices.get("bibtex cite")
+        attackDefence_index = column_indices.get("Attack/ Defense")
+        pdfLink_index = column_indices.get("Article PDF link")
+        isDownloaded_index= column_indices.get("isDownloaded?")
+
+        # ~~~~~~~~~~~~~~
+
         rowNum = 1
         for row in sheet.iter_rows(min_row=2, values_only=True):
             rowNum += 1
-            if not needToDownloadRow(row):
+            if not needToDownloadRow(row[isDownloaded_index],row[pdfLink_index]):
                 continue
-            bibtex = getBibtex(row, rowNum)
+            bibtex = getBibtex(row,rowNum,name_index,last_name_index,attackDefence_index,title_index,bibtex_index,pdfLink_index)
             pdf_links, isNameDotPDF = find_pdf_links(bibtex)
             firstTimeOnly = True
             for pdf_link in pdf_links:
@@ -266,7 +289,7 @@ def main():
                     pdf_url = pdf_link['href']
                     prntL(pdf_url)
                     try:
-                        if download_pdf(pdf_url, row[7], rowNum) == 1:
+                        if download_pdf(pdf_url, row[title_index], rowNum) == 1:
                             logging.info(f'successful downloading')
                             markAsDownloaded(True, pdf_url, rowNum, sheet)
                         else:
@@ -284,7 +307,7 @@ def main():
     except KeyboardInterrupt:
         prntL("Script execution manually interrupted.")
     except Exception as e:
-        logging.error(f'An unexpected exception occurred: {e}')
+        prntL(f'An unexpected exception occurred:\n\t {e}')
 
 if __name__ == "__main__":
     main()

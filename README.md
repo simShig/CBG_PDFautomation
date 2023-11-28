@@ -34,6 +34,8 @@
        pip install openpyxl
        pip install requests
        pip install beautifulsoup4
+       pip install webdriver-manager
+   
 ### prepare your input data:
 Use the next [Excel Sheet Format](https://github.com/simShig/CBG_PDFautomation/files/13323088/ExcelSheetFormat.xlsx)  as your article database (in order for the code to access the right columns etc...)
 

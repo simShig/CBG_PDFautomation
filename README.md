@@ -25,7 +25,7 @@
 
     Execute the following curl command:
 
-        curl --insecure --proxy unblock.oxylabs.io:60000 --proxy-user "USERNAME:PASSWORD" https://ip.oxylabs.io
+        curl --insecure --proxy pr.oxylabs.io:7777 --proxy-user "USERNAME:PASSWORD" https://ip.oxylabs.io
 
    The output should be a random IP.
 

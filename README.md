@@ -10,9 +10,9 @@
        logs_dir_path
 
 2. setup rotating ip mechanism:
-    1. create an account on oxylabs webUnBlocker (free 1-week trial):
+    1. create an account on [oxylabs Residential-Proxies](https://oxylabs.io/products/residential-proxy-pool)
 
-   https://oxylabs.io/products/web-unblocker
+   
    
     2. change Username and Password variables to match your subscription
 
@@ -25,7 +25,7 @@
 
     Execute the following curl command:
 
-        curl --insecure --proxy unblock.oxylabs.io:60000 --proxy-user "USERNAME:PASSWORD" https://ip.oxylabs.io
+        curl --insecure --proxy pr.oxylabs.io:7777 --proxy-user "USERNAME:PASSWORD" https://ip.oxylabs.io
 
    The output should be a random IP.
 
@@ -34,8 +34,10 @@
        pip install openpyxl
        pip install requests
        pip install beautifulsoup4
+       pip install webdriver-manager
+   
 ### prepare your input data:
-Use the next [Excel Sheet Format](https://github.com/simShig/CBG_PDFautomation/files/13323088/ExcelSheetFormat.xlsx)  as your article database (in order for the code to access the right columns etc...)
+Use the next [Excel Sheet Format](https://github.com/simShig/CBG_PDFautomation/files/13488250/ExcelSheetFormat.xlsx) as your article database (in order for the code to access the right columns etc...)
 
 Make sure you remove duplicates (regarding the next columns - Bibtex, Title)
 

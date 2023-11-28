@@ -37,7 +37,7 @@
        pip install webdriver-manager
    
 ### prepare your input data:
-Use the next [Excel Sheet Format](https://github.com/simShig/CBG_PDFautomation/files/13323088/ExcelSheetFormat.xlsx)  as your article database (in order for the code to access the right columns etc...)
+Use the next [Excel Sheet Format](https://github.com/simShig/CBG_PDFautomation/files/13488250/ExcelSheetFormat.xlsx) as your article database (in order for the code to access the right columns etc...)
 
 Make sure you remove duplicates (regarding the next columns - Bibtex, Title)
 

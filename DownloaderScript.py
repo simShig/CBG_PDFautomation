@@ -5,6 +5,7 @@ import os
 import logging
 import datetime
 import requests
+import pandas as pd
 from bs4 import BeautifulSoup
 
 #
@@ -29,7 +30,7 @@ def startProxy(username, password):
     from requests.packages.urllib3.exceptions import InsecureRequestWarning
     requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
     global proxies
-    prxStr = f'http://{username}:{password}@unblock.oxylabs.io:60000'
+    prxStr = f'http://{username}:{password}@pr.oxylabs.io:7777'
     proxy = prxStr
     proxies = {
         'http': proxy,
@@ -88,18 +89,18 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
         return [], False
 
 
-def markAsDownloaded(wasDownloaded, pdfUrl, rNum, sheet):
+def markAsDownloaded(wasDownloaded, pdfUrl, rNum, sheet, pdfLinkIndex, wasDownloadedIndex):
     needVpn = False
 
     # Assuming that the tuple index 21 corresponds to column "V"
-    sheet.cell(row=rNum, column=22, value=pdfUrl)  # article PDF link
+    sheet.cell(row=rNum, column=pdfLinkIndex+1, value=pdfUrl)  # article PDF link
 
     if wasDownloaded:
-        sheet.cell(row=rNum, column=23, value="V")  # wasDownloaded?
+        sheet.cell(row=rNum, column=wasDownloadedIndex+1, value="V")  # wasDownloaded?
 
-    if any(site in pdfUrl.lower() for site in blocked_sites):
-        needVpn = True
-        sheet.cell(row=rNum, column=24, value="V")  # is handled by sci-hub?
+    # if any(site in pdfUrl.lower() for site in blocked_sites):
+    #     needVpn = True
+    #     sheet.cell(row=rNum, column=24, value="V")  # is handled by sci-hub?
     # prntL(f'\t\tMarkedInEXCEL: wasDownloaded?{wasDownloaded}, need VPN? {needVpn} ')
     global wb
     wb.save(excel_file_path)
@@ -230,12 +231,13 @@ def prntL(someString):
 
 
 def cleanup():
-    prntL("~~~~in cleanup")
+    prntL("~~atExit: in cleanup")
     global wb
     # if 'wb' in locals():
-    prntL("~~~~~in if locals()")
     wb.save(excel_file_path)
+    prntL("~~atExit: saving WorkBook")
     wb.close()
+    prntL("~~atExit: WorkBook closed")
     close_logging()
 
 
@@ -254,7 +256,6 @@ def initializeIndices(sheet):
     header_row = next(sheet.iter_rows(min_row=1, max_row=1, values_only=True))
     column_indices = {name: index for index, name in enumerate(header_row)}
     return column_indices
-
 
 def main():
     try:
@@ -275,6 +276,26 @@ def main():
         isDownloaded_index= column_indices.get("isDownloaded?")
 
         # ~~~~~~~~~~~~~~
+        # Convert the Excel sheet to a Pandas DataFrame
+        data = [row for row in sheet.iter_rows(values_only=True)]
+        header = [cell.value for cell in sheet[1]]
+        df = pd.DataFrame(data, columns=header)
+
+        # Specify the columns based on which you want to remove duplicates
+        columns_to_check_duplicates = ["bibtex cite", "Article PDF link", "Title"]  # Adjust as needed
+
+        # Use pandas to remove duplicates
+        df_no_duplicates = df.drop_duplicates(subset=columns_to_check_duplicates, keep="first")
+
+        # Convert the DataFrame back to an openpyxl worksheet
+        sheet.delete_rows(2, sheet.max_row)
+        firstimer = True
+        for index, row in enumerate(df_no_duplicates.itertuples(index=False), start=2):
+            if firstimer:
+                firstimer = False
+                continue
+            sheet.append(row)
+
 
         rowNum = 1
         for row in sheet.iter_rows(min_row=2, values_only=True):
@@ -291,10 +312,10 @@ def main():
                     try:
                         if download_pdf(pdf_url, row[title_index], rowNum) == 1:
                             logging.info(f'successful downloading')
-                            markAsDownloaded(True, pdf_url, rowNum, sheet)
+                            markAsDownloaded(True, pdf_url, rowNum, sheet,pdfLink_index,isDownloaded_index)
                         else:
                             logging.info(f'download failed')
-                            markAsDownloaded(False, pdf_url, rowNum, sheet)
+                            markAsDownloaded(False, pdf_url, rowNum, sheet,pdfLink_index,isDownloaded_index)
                     except Exception as e:
                         logging.error(f'Exception while processing PDF on row {rowNum}: {e}')
                     finally:

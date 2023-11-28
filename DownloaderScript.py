@@ -230,6 +230,7 @@ def prntL(someString):
     print(someString)
 
 
+
 def cleanup():
     prntL("~~atExit: in cleanup")
     global wb

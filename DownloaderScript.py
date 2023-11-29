@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 
 #
 #
-excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskAll.xlsx'
+excel_file_path = fr'C:\Users\Simon\Desktop\CBG\PRtables.xlsx'
 output_dir_path = fr'C:\Users\Simon\Desktop\CBG\PDFs'
 logs_dir_path = fr'C:\Users\Simon\Desktop\CBG\LogFiles'
 oxyUser = "RaCheck"
@@ -20,7 +20,7 @@ proxies = None
 log_file = None
 blocked_sites = ["sciencedirect","ieeexplore", "aiia.csd", "link.springer","onlinelibrary.wiley"]  # Add more sites as needed -  "researchgate"
 
-isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
+# isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
 
 # indices = [0,1,2,4,7]
 
@@ -76,17 +76,18 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
         checkResponseStatus(response)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
-        selectors = ['a[href$=".pdf"]', 'a[href*="/pdf"]', 'a[href*="/article/"]', 'a[href*="/download"]']
+        selectors = ['a[href$=".pdf"]', 'a[href*="/pdf"]', 'a[href*="/article/"]', 'a[href*="/download"]', 'a[href*="/document/"]', 'a[href*="servlets/purl/"]']
         for selector in selectors:
             pdf_links = soup.select(selector)
+            # if pdf_links:
+            #     # isNameDotPDF = selector in ('a[href$=".pdf"]',)
             if pdf_links:
-                isNameDotPDF = selector in ('a[href$=".pdf"]',)
-                return pdf_links, isNameDotPDF
+                return pdf_links
 
         prntL("Could not find PDF URLs")
         # prntL(response.text)
         # logging.info("Could not find PDF URLs")
-        return [], False
+        return []
 
 
 def markAsDownloaded(wasDownloaded, pdfUrl, rNum, sheet, pdfLinkIndex, wasDownloadedIndex):
@@ -108,13 +109,22 @@ def markAsDownloaded(wasDownloaded, pdfUrl, rNum, sheet, pdfLinkIndex, wasDownlo
 
 def twistBlockedUrl(pdfUrl):        ##add special twists if encounter mor problematiqe domains.
     newUrl = 'https://sci-hub.se/'
+
     if "ieeexplore" in pdfUrl.lower():
+        if "abstract/document/" in pdfUrl.lower():
+            newUrl=newUrl+pdfUrl
+            print(f'\tnew URL is: {newUrl}')
+            return newUrl
         base_name = os.path.splitext(os.path.basename(pdfUrl))[0]
         # Extract the desired part from the base name
         desired_part_with_zeros = base_name.split('/')[-1]
         # Remove leading zeros
         desired_part_without_zeros = str(int(desired_part_with_zeros))
         newUrl = 'https://sci-hub.se/https://ieeexplore.ieee.org/document/'+desired_part_without_zeros  #apply changes for IEEExplore
+    if "sciencedirect" in pdfUrl.lower() and "/am/" in pdfUrl.lower():  #case sciencedirect.com/...../am/....
+        # Remove "/am/" from the original string
+        pdfUrl = pdfUrl.replace("/am/", "/")
+        newUrl = newUrl+pdfUrl
     else:
         newUrl = newUrl+pdfUrl
     print(f'\tnew URL is: {newUrl}')
@@ -262,7 +272,7 @@ def main():
     try:
         setup_logging()
         startProxy(oxyUser, oxyPW)
-        prntL("starting")
+        prntL(f'starting, running on this input file:\n {excel_file_path}')
         global wb
         wb = openpyxl.load_workbook(excel_file_path)
         sheet = wb.active
@@ -275,7 +285,26 @@ def main():
         attackDefence_index = column_indices.get("Attack/ Defense")
         pdfLink_index = column_indices.get("Article PDF link")
         isDownloaded_index= column_indices.get("isDownloaded?")
+        if name_index is None:
+            print("Error: 'First Name' index is None.")
 
+        if last_name_index is None:
+            print("Error: 'Last Name' index is None.")
+
+        if title_index is None:
+            print("Error: 'Title' index is None.")
+
+        if bibtex_index is None:
+            print("Error: 'bibtex cite' index is None.")
+
+        if attackDefence_index is None:
+            print("Error: 'Attack/ Defense' index is None.")
+
+        if pdfLink_index is None:
+            print("Error: 'Article PDF link' index is None.")
+
+        if isDownloaded_index is None:
+            print("Error: 'isDownloaded?' index is None.")
         # ~~~~~~~~~~~~~~
         # Convert the Excel sheet to a Pandas DataFrame
         data = [row for row in sheet.iter_rows(values_only=True)]
@@ -300,11 +329,19 @@ def main():
 
         rowNum = 1
         for row in sheet.iter_rows(min_row=2, values_only=True):
+            # Check if end of table (all cells in the row are None or empty strings)
+            if all(cell is None or cell == "" for cell in row):
+                # The row is empty, indicating the end of the table
+                prntL(f'!!!~Row {rowNum} is empty -> End of table')
+                break
             rowNum += 1
             if not needToDownloadRow(row[isDownloaded_index],row[pdfLink_index]):
                 continue
             bibtex = getBibtex(row,rowNum,name_index,last_name_index,attackDefence_index,title_index,bibtex_index,pdfLink_index)
-            pdf_links, isNameDotPDF = find_pdf_links(bibtex)
+            pdf_links = find_pdf_links(bibtex)
+            if not pdf_links and row[title_index] is not None:
+                prntL("@@@second try - search scholar by title not bibtex")     ##to handle "couldnt find pdf url"
+                pdf_links = find_pdf_links(row[title_index])
             firstTimeOnly = True
             for pdf_link in pdf_links:
                 if firstTimeOnly:

@@ -20,11 +20,6 @@ proxies = None
 log_file = None
 blocked_sites = ["sciencedirect","ieeexplore", "aiia.csd", "link.springer","onlinelibrary.wiley"]  # Add more sites as needed -  "researchgate"
 
-# isNameDotPDF = True  ##distinguish between urls .../pdf/.. (FALSE) or ....pdf (true)
-
-# indices = [0,1,2,4,7]
-
-
 
 def startProxy(username, password):
     from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -80,14 +75,10 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
         selectors = ['a[href$=".pdf"]', 'a[href*="/pdf"]', 'a[href*="/article/"]', 'a[href*="/download"]', 'a[href*="/document/"]', 'a[href*="servlets/purl/"]', 'a[href*="doi/abs/"]']
         for selector in selectors:
             pdf_links = soup.select(selector)
-            # if pdf_links:
-            #     # isNameDotPDF = selector in ('a[href$=".pdf"]',)
             if pdf_links:
                 return pdf_links
 
         prntL("Could not find PDF URLs")
-        # prntL(response.text)
-        # logging.info("Could not find PDF URLs")
         return []
 
 
@@ -99,18 +90,12 @@ def markAsDownloaded(wasDownloaded, pdfUrl, rNum, sheet, pdfLinkIndex, wasDownlo
 
     if wasDownloaded:
         sheet.cell(row=rNum, column=wasDownloadedIndex+1, value="V")  # wasDownloaded?
-
-    # if any(site in pdfUrl.lower() for site in blocked_sites):
-    #     needVpn = True
-    #     sheet.cell(row=rNum, column=24, value="V")  # is handled by sci-hub?
-    # prntL(f'\t\tMarkedInEXCEL: wasDownloaded?{wasDownloaded}, need VPN? {needVpn} ')
     global wb
     wb.save(excel_file_path)
 
 
 def twistBlockedUrl(pdfUrl):        ##add special twists if encounter mor problematiqe domains.
     newUrl = 'https://sci-hub.se/'
-
     if "ieeexplore" in pdfUrl.lower():
         if "abstract/document/" in pdfUrl.lower():
             newUrl=newUrl+pdfUrl
@@ -133,8 +118,9 @@ def twistBlockedUrl(pdfUrl):        ##add special twists if encounter mor proble
 
 def download_pdf(pdfUrl, articleName, rNum):  # returns 1 if downloaded, -1 if failed
     if articleName==None:   #in case no title was given
-        articleName = "NoArticleTitle"
-    articleName = ''.join(char for char in articleName if char.isalpha())  # remove non-alphabetical chars
+        articleName = f"NoArticleTitle_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
+    else:
+        articleName = ''.join(char for char in articleName if char.isalpha())  # remove non-alphabetical chars
     articleName = f'{rNum}_{articleName}'
     prntL("\t\t" + articleName)
     os.makedirs(output_dir_path, exist_ok=True)
@@ -144,10 +130,6 @@ def download_pdf(pdfUrl, articleName, rNum):  # returns 1 if downloaded, -1 if f
     # Combine the folder path and the filename to create the full file path
     file_path = folder_path + articleName + '.pdf'
     tryWithSciHub = False       #when managing knowen issues
-    # Send a GET request to the URL
-    # if proxies:
-    #     urlResp = requests.request('GET', pdfUrl, proxies=proxies, verify=False)  # urlResponse
-    # else:
     try:
         if any(site in pdfUrl.lower() for site in blocked_sites):
             tryWithSciHub = True
@@ -278,7 +260,7 @@ def main():
         wb = openpyxl.load_workbook(excel_file_path)
         sheet = wb.active
         column_indices = initializeIndices(sheet)
-        # relevant indices (for modular use of excel sheets):
+    # relevant indices (for modular use of excel sheets):
         name_index = column_indices.get("First Name")
         last_name_index = column_indices.get("Last Name")
         title_index = column_indices.get("Title")

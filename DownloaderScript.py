@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 
 #
 #
-excel_file_path = fr'C:\Users\Simon\Desktop\CBG\PRtables.xlsx'
+excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskAll.xlsx'
 output_dir_path = fr'C:\Users\Simon\Desktop\CBG\PDFs'
 logs_dir_path = fr'C:\Users\Simon\Desktop\CBG\LogFiles'
 oxyUser = "RaCheck"
@@ -40,7 +40,8 @@ def startProxy(username, password):
 
 
 def getBibtex(row, rowNum, name_index,last_name_index, attackDefence_index, title_index, bibtex_index, pdfLink_index):  # rowNum > bibtex
-    prntL(f"row num: {rowNum} [by {row[name_index]} {row[last_name_index]}, article name: {row[attackDefence_index]} ~ {row[title_index]}] ")
+    logging.info(f"row num: {rowNum} [by {row[name_index]} {row[last_name_index]}, article name: {row[attackDefence_index]} ~ {row[title_index]}] ")
+    print(f'row num: {rowNum}')
     bibtex = row[bibtex_index]
     if bibtex is None:
         bibtex = row[title_index]
@@ -76,7 +77,7 @@ def find_pdf_links(bibtex):  # bibtex > pdfUrl
         checkResponseStatus(response)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
-        selectors = ['a[href$=".pdf"]', 'a[href*="/pdf"]', 'a[href*="/article/"]', 'a[href*="/download"]', 'a[href*="/document/"]', 'a[href*="servlets/purl/"]']
+        selectors = ['a[href$=".pdf"]', 'a[href*="/pdf"]', 'a[href*="/article/"]', 'a[href*="/download"]', 'a[href*="/document/"]', 'a[href*="servlets/purl/"]', 'a[href*="doi/abs/"]']
         for selector in selectors:
             pdf_links = soup.select(selector)
             # if pdf_links:
@@ -162,7 +163,7 @@ def download_pdf(pdfUrl, articleName, rNum):  # returns 1 if downloaded, -1 if f
 
                 if "Unfortunately, Sci-Hub" in urlResp.text:
                     prntL(f'\n\t[X] !!!~An error occurred while downloading PDF on row {rNum}:\n'
-                          f'the link is not available on sci-hub')
+                          f'\t\tthe link is not available on sci-hub')
                     return -1
 
                 # Find the <embed> tag within the <div id="article"> section
@@ -286,25 +287,25 @@ def main():
         pdfLink_index = column_indices.get("Article PDF link")
         isDownloaded_index= column_indices.get("isDownloaded?")
         if name_index is None:
-            print("Error: 'First Name' index is None.")
+            prntL("Error: 'First Name' index is None.\nmake sure column name spelled correctly (including Capital letters)\n")
 
         if last_name_index is None:
-            print("Error: 'Last Name' index is None.")
+            prntL("Error: 'Last Name' index is None.\nmake sure column name spelled correctly (including Capital letters)\n")
 
         if title_index is None:
-            print("Error: 'Title' index is None.")
+            prntL("Error: 'Title' index is None.\nmake sure column name spelled correctly (including Capital letters)\n")
 
         if bibtex_index is None:
-            print("Error: 'bibtex cite' index is None.")
+            prntL("Error: 'bibtex cite' index is None.\nmake sure column name spelled correctly (including Capital letters)\n")
 
         if attackDefence_index is None:
-            print("Error: 'Attack/ Defense' index is None.")
+            prntL("Error: 'Attack/ Defense' index is None.\nmake sure column name spelled correctly (including Capital letters)\n")
 
         if pdfLink_index is None:
-            print("Error: 'Article PDF link' index is None.")
+            prntL("Error: 'Article PDF link' index is None.\nmake sure column name spelled correctly (including Capital letters)\n")
 
         if isDownloaded_index is None:
-            print("Error: 'isDownloaded?' index is None.")
+            prntL("Error: 'isDownloaded?' index is None.\nmake sure column name spelled correctly (including Capital letters)\n")
         # ~~~~~~~~~~~~~~
         # Convert the Excel sheet to a Pandas DataFrame
         data = [row for row in sheet.iter_rows(values_only=True)]

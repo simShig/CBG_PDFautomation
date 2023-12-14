@@ -251,6 +251,7 @@ def initializeIndices(sheet):
     column_indices = {name: index for index, name in enumerate(header_row)}
     return column_indices
 
+
 def main():
     try:
         setup_logging()

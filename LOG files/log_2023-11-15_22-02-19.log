@@ -1,0 +1,2 @@
+2023-11-15 22:02:20,925 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+2023-11-15 22:02:22,183 [INFO] - row num: 2 [by Omer Hofman, article name: Attack ~ {SLAP}: Improving Physical Adversarial Examples with {Short-Lived} Adversarial Perturbations] 

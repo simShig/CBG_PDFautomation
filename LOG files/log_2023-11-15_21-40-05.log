@@ -1,0 +1,30 @@
+2023-11-15 21:40:06,087 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+2023-11-15 21:40:07,363 [INFO] - row num: 2 [by Omer Hofman, article name: Attack ~ TPatch: A Triggered Physical Adversarial Patch] 
+2023-11-15 21:40:10,919 [ERROR] - An error occurred: Message: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
+  (Session info: chrome=119.0.6045.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF763B08EF2+54786]
+	(No symbol) [0x00007FF763A75612]
+	(No symbol) [0x00007FF76392A64B]
+	(No symbol) [0x00007FF76392EEC1]
+	(No symbol) [0x00007FF76393115F]
+	(No symbol) [0x00007FF763931250]
+	(No symbol) [0x00007FF76396B424]
+	(No symbol) [0x00007FF76396B91C]
+	(No symbol) [0x00007FF7639A6D87]
+	(No symbol) [0x00007FF76398BEAF]
+	(No symbol) [0x00007FF7639A4D02]
+	(No symbol) [0x00007FF76398BC43]
+	(No symbol) [0x00007FF763960941]
+	(No symbol) [0x00007FF763961B84]
+	GetHandleVerifier [0x00007FF763E57F52+3524194]
+	GetHandleVerifier [0x00007FF763EAD800+3874576]
+	GetHandleVerifier [0x00007FF763EA5D7F+3843215]
+	GetHandleVerifier [0x00007FF763BA5086+694166]
+	(No symbol) [0x00007FF763A80A88]
+	(No symbol) [0x00007FF763A7CA94]
+	(No symbol) [0x00007FF763A7CBC2]
+	(No symbol) [0x00007FF763A6CC83]
+	BaseThreadInitThunk [0x00007FFCFF57257D+29]
+	RtlUserThreadStart [0x00007FFCFFC0AA78+40]
+

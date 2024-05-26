@@ -1,0 +1,48 @@
+2023-11-15 21:35:02,242 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+2023-11-15 21:35:48,027 [INFO] - ====== WebDriver manager ======
+2023-11-15 21:35:51,085 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-15 21:35:51,296 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-15 21:35:51,506 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-15 21:35:51,935 [INFO] - WebDriver version 119.0.6045.105 selected
+2023-11-15 21:35:51,938 [INFO] - Modern chrome version https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/win32/chromedriver-win32.zip
+2023-11-15 21:35:51,938 [INFO] - About to download new driver from https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/win32/chromedriver-win32.zip
+2023-11-15 21:35:52,705 [INFO] - Driver downloading response is 200
+2023-11-15 21:35:53,519 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-15 21:35:53,830 [INFO] - Driver has been saved in cache [C:\Users\Simon\.wdm\drivers\chromedriver\win64\119.0.6045.105]
+2023-11-15 21:35:57,872 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+2023-11-15 21:36:07,996 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+2023-11-15 21:36:42,668 [INFO] - ====== WebDriver manager ======
+2023-11-15 21:36:45,194 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-15 21:36:45,407 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-15 21:36:45,627 [INFO] - Driver [C:\Users\Simon\.wdm\drivers\chromedriver\win64\119.0.6045.105\chromedriver-win32/chromedriver.exe] found in cache
+2023-11-15 21:36:48,566 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+2023-11-15 21:37:00,629 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+2023-11-15 21:37:02,029 [INFO] - row num: 2 [by Omer Hofman, article name: Attack ~ TPatch: A Triggered Physical Adversarial Patch] 
+2023-11-15 21:37:04,889 [ERROR] - An error occurred: Message: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
+  (Session info: chrome=119.0.6045.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF763B08EF2+54786]
+	(No symbol) [0x00007FF763A75612]
+	(No symbol) [0x00007FF76392A64B]
+	(No symbol) [0x00007FF76392EEC1]
+	(No symbol) [0x00007FF76393115F]
+	(No symbol) [0x00007FF763931250]
+	(No symbol) [0x00007FF76396B424]
+	(No symbol) [0x00007FF76396B91C]
+	(No symbol) [0x00007FF7639A6D87]
+	(No symbol) [0x00007FF76398BEAF]
+	(No symbol) [0x00007FF7639A4D02]
+	(No symbol) [0x00007FF76398BC43]
+	(No symbol) [0x00007FF763960941]
+	(No symbol) [0x00007FF763961B84]
+	GetHandleVerifier [0x00007FF763E57F52+3524194]
+	GetHandleVerifier [0x00007FF763EAD800+3874576]
+	GetHandleVerifier [0x00007FF763EA5D7F+3843215]
+	GetHandleVerifier [0x00007FF763BA5086+694166]
+	(No symbol) [0x00007FF763A80A88]
+	(No symbol) [0x00007FF763A7CA94]
+	(No symbol) [0x00007FF763A7CBC2]
+	(No symbol) [0x00007FF763A6CC83]
+	BaseThreadInitThunk [0x00007FFCFF57257D+29]
+	RtlUserThreadStart [0x00007FFCFFC0AA78+40]
+

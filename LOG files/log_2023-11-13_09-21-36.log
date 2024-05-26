@@ -1,0 +1,14 @@
+2023-11-13 09:21:38,585 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+2023-11-13 09:22:14,376 [INFO] - ====== WebDriver manager ======
+2023-11-13 09:22:16,047 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-13 09:22:16,275 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-13 09:22:16,473 [INFO] - There is no [win64] chromedriver "119.0.6045.105" for browser google-chrome "119.0.6045" in cache
+2023-11-13 09:22:16,473 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-13 09:22:16,902 [INFO] - WebDriver version 119.0.6045.105 selected
+2023-11-13 09:22:16,903 [INFO] - Modern chrome version https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/win32/chromedriver-win32.zip
+2023-11-13 09:22:16,903 [INFO] - About to download new driver from https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/win32/chromedriver-win32.zip
+2023-11-13 09:22:17,333 [INFO] - Driver downloading response is 200
+2023-11-13 09:22:17,799 [INFO] - Get LATEST chromedriver version for google-chrome
+2023-11-13 09:22:18,114 [INFO] - Driver has been saved in cache [C:\Users\Simon\.wdm\drivers\chromedriver\win64\119.0.6045.105]
+2023-11-13 09:22:20,866 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry
+2023-11-13 09:22:29,922 [WARNING] - The chromedriver version (118.0.5993.70) detected in PATH at C:\Users\Simon\PycharmProjects\CBGproject\chromedriver.exe might not be compatible with the detected chrome version (119.0.6045.124); currently, chromedriver 119.0.6045.105 is recommended for chrome 119.*, so it is advised to delete the driver in PATH and retry

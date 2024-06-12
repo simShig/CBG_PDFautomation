@@ -1,3 +1,4 @@
+import exceptiongroup
 import openai
 from pathlib import Path
 # from llama_index import download_loader
@@ -34,7 +35,7 @@ from openai import AzureOpenAI
 from openai import OpenAI
 client = OpenAI()
 
-dir_path = fr'C:\Users\Simon\PycharmProjects\CBGproject\venv\ExtractFromArticles\PDFsExample'
+dir_path = fr'C:\Users\Simon\PycharmProjects\CBGproject\venv\ExtractFromArticles\PDFs'
 arr_paper = os.listdir(dir_path)
 
 #arr_paper = ['41_SpongeExamplesEnergyLatencyAttacksonNeuralNetworks.pdf','44_ENERGYLATENCYATTACKSVIASPONGEPOISONING.pdf']
@@ -150,29 +151,35 @@ prompt_sys = ""
 paper_list_first_analysis = []
 paper_list_sec_analysis = []
 json_lists =[]
-columns_order = ["paper_name","Attack Name", "Objective", "Threat Model", "Attacker Knowledge",  "is Backdoor" , "Attack Type", "Attack Phase",
-                 "Field", "Applicable in the physical domain", "Description", "Attack's success rate - digital domain", "Attack's success rate - physical domain", "Attacked models", "Datasets", "Reference"]
+columns_order = ["record_id","paper_name","Attack Name", "Objective", "Threat Model", "Attacker Knowledge",  "is Backdoor" , "Attack Type", "Attack Phase",
+                 "Domain", "Applicable in the physical domain", "Description", "Attack's success rate - digital domain", "Attack's success rate - physical domain", "Attacked models", "Datasets", "Reference"]
 df_columns_order = pd.DataFrame([columns_order], columns=columns_order)
 
 csv_name = 'output_new_updated.csv'
 if not os.path.exists(csv_name):
-    df_columns_order.to_csv(csv_name, mode='a', index=False, header=False)
+    df_columns_order.to_csv(csv_name, mode='a', index=False, header=True)
     df_existing = pd.DataFrame(columns=columns_order)
 else:
-    df_existing = pd.read_csv(csv_name, header=None, names=columns_order)
+    df_existing = pd.read_csv(csv_name)
 
-existing = list(df_existing['paper_name'].values)
+existing = list(df_existing['paper_name'].str.strip().str.lower().values)
 
 for paper_name in arr_paper:#paper_list:
     print("paper name: "+paper_name)
     # Iterate through the new data and add rows that don't exist in the existing CSV
-    if paper_name in existing:#df_existing['paper_name'].values:  # Assuming 'name' is the attack name
+    normalized_paper_name = paper_name.strip().lower()
+    if normalized_paper_name in existing:
+        print("existing, passing next")
         continue
-    existing.append(paper_name)
+    existing.append(normalized_paper_name)
     # document = pdfLoader.load_data(file=Path(fr'C:\Users\Administrator\Documents\phd\oran\down_paper\CBG_PDFautomation\PDFs_new\{paper_name}'))#(file=Path(fr'C:\Users\Administrator\Documents\phd\oran\papers\{paper_name}'))
     # Extract text from the PDF
     pdf_path = dir_path + '\\'+ paper_name
-    pdf_text = extract_text_from_pdf(pdf_path)
+    try:
+        pdf_text = extract_text_from_pdf(pdf_path)
+    except Exception:
+        print("Couldnt Read Pdf,continue to next")
+        continue
     #print(document.text)
 
     prompt_sys = get_template()#"<YOUR QUERY>"
@@ -252,7 +259,11 @@ for paper_name in arr_paper:#paper_list:
     #all_jsons+=json_list[0]
 
 
-    df = pd.DataFrame(json_list)
+    try:
+        df = pd.DataFrame(json_list)
+    except Exception:
+        print("got exception : AttributeError: 'str' object has no attribute 'keys'\ncontinue to next article.")
+        continue
     df['paper_name'] = paper_name
 
     df = df.reindex(columns=columns_order)

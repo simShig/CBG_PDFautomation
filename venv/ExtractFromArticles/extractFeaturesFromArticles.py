@@ -130,6 +130,13 @@ def get_template():
         return f.read().strip()
 
 
+# Function to generate a new RecordID
+# def generate_new_record_id(df):
+#     if df.empty:
+#         return 1
+#     else:
+#         return df["RecordID"].max() + 1
+
 
 ###go over all the papers until final analysis
 import pandas as pd
@@ -151,8 +158,8 @@ prompt_sys = ""
 paper_list_first_analysis = []
 paper_list_sec_analysis = []
 json_lists =[]
-columns_order = ["record_id","paper_name","Attack Name", "Objective", "Threat Model", "Attacker Knowledge",  "is Backdoor" , "Attack Type", "Attack Phase",
-                 "Domain", "Applicable in the physical domain", "Description", "Attack's success rate - digital domain", "Attack's success rate - physical domain", "Attacked models", "Datasets", "Reference"]
+columns_order = ["RecordID","paper_name","Attack Name", "Objective", "Threat Model", "Attacker Knowledge",  "is Backdoor" , "Attack Type", "Attack Phase",
+                 "Domain","Task Type", "Applicable in the physical domain", "Description", "Attack's success rate - digital domain", "Attack's success rate - physical domain", "Attacked models", "Datasets", "Reference"]
 df_columns_order = pd.DataFrame([columns_order], columns=columns_order)
 
 csv_name = 'output_new_updated.csv'
@@ -265,7 +272,8 @@ for paper_name in arr_paper:#paper_list:
         print("got exception : AttributeError: 'str' object has no attribute 'keys'\ncontinue to next article.")
         continue
     df['paper_name'] = paper_name
-
+    # newRecId = generate_new_record_id(df)
+    # df['RecordID'] = newRecId
     df = df.reindex(columns=columns_order)
 
     # Iterate through the new data and add rows that don't exist in the existing CSV
@@ -285,4 +293,4 @@ for paper_name in arr_paper:#paper_list:
     # Write the DataFrame to an Excel file
     df.to_csv(csv_name, mode='a', index=False, header=False)
 
-    print("********************************************")
+    print("**************** End of this article analysis *******************")

@@ -1,0 +1,1127 @@
+{
+    "1": {
+        "title": "Adversarial example detection by classification for deep speech recognition",
+        "bibtex": "@inproceedings{samizade2020adversarial,  title={Adversarial example detection by classification for deep speech recognition},  author={Samizade, Saeid and Tan, Zheng-Hua and Shen, Chao and Guan, Xiaohong},  booktitle={ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},  pages={3102--3106},  year={2020},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "2": {
+        "title": "Multi-targeted adversarial example in evasion attack on deep neural network",
+        "bibtex": "@article{kwon2018multi,  title={Multi-targeted adversarial example in evasion attack on deep neural network},  author={Kwon, Hyun and Kim, Yongchul and Park, Ki-Woong and Yoon, Hyunsoo and Choi, Daeseon},  journal={IEEE Access},  volume={6},  pages={46084--46096},  year={2018},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "3": {
+        "title": "Sok: A modularized approach to study the security of automatic speech recognition systems",
+        "bibtex": "@article{chen2022sok,  title={Sok: A modularized approach to study the security of automatic speech recognition systems},  author={Chen, Yuxuan and Zhang, Jiangshan and Yuan, Xuejing and Zhang, Shengzhi and Chen, Kai and Wang, Xiaofeng and Guo, Shanqing},  journal={ACM Transactions on Privacy and Security},  volume={25},  number={3},  pages={1--31},  year={2022},  publisher={ACM New York, NY}}",
+        "isDownloaded": false
+    },
+    "4": {
+        "title": "Who is real bob? adversarial attacks on speaker recognition systems",
+        "bibtex": "@inproceedings{chen2021real,  title={Who is real bob? adversarial attacks on speaker recognition systems},  author={Chen, Guangke and Chenb, Sen and Fan, Lingling and Du, Xiaoning and Zhao, Zhe and Song, Fu and Liu, Yang},  booktitle={2021 IEEE Symposium on Security and Privacy (SP)},  pages={694--711},  year={2021},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "5": {
+        "title": "Adversarial attack and defense strategies for deep speaker recognition systems",
+        "bibtex": "@article{jati2021adversarial,  title={Adversarial attack and defense strategies for deep speaker recognition systems},  author={Jati, Arindam and Hsu, Chin-Cheng and Pal, Monisankha and Peri, Raghuveer and AbdAlmageed, Wael and Narayanan, Shrikanth},  journal={Computer Speech \\& Language},  volume={68},  pages={101199},  year={2021},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "6": {
+        "title": "Generation of black-box audio adversarial examples based on gradient approximation and autoencoders",
+        "bibtex": "@article{huang2022generation,  title={Generation of black-box audio adversarial examples based on gradient approximation and autoencoders},  author={Huang, Po-Hao and Yu, Honggang and Panoff, Max and Wang, Ting-Chi},  journal={ACM Journal on Emerging Technologies in Computing Systems (JETC)},  volume={18},  number={3},  pages={1--19},  year={2022},  publisher={ACM New York, NY}}",
+        "isDownloaded": false
+    },
+    "7": {
+        "title": "IMPGA: An Effective and Imperceptible Black-Box Attack Against Automatic Speech Recognition Systems",
+        "bibtex": "@inproceedings{liang2022impga,  title={IMPGA: An Effective and Imperceptible Black-Box Attack Against Automatic Speech Recognition Systems},  author={Liang, Luopu and Guo, Bowen and Lian, Zhichao and Li, Qianmu and Jing, Huiyun},  booktitle={Asia-Pacific Web (APWeb) and Web-Age Information Management (WAIM) Joint International Conference on Web and Big Data},  pages={349--363},  year={2022},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "8": {
+        "title": "Binary black-box evasion attacks against deep learning-based static malware detectors with adversarial byte-level language model",
+        "bibtex": "@article{ebrahimi2020binary,  title={Binary black-box evasion attacks against deep learning-based static malware detectors with adversarial byte-level language model},  author={Ebrahimi, Mohammadreza and Zhang, Ning and Hu, James and Raza, Muhammad Taqi and Chen, Hsinchun},  journal={arXiv preprint arXiv:2012.07994},  year={2020}}",
+        "isDownloaded": false
+    },
+    "9": {
+        "title": "Privacy against real-time speech emotion detection via acoustic adversarial evasion of machine learning",
+        "bibtex": "@article{testa2023privacy,  title={Privacy against real-time speech emotion detection via acoustic adversarial evasion of machine learning},  author={Testa, Brian and Xiao, Yi and Sharma, Harshit and Gump, Avery and Salekin, Asif},  journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},  volume={7},  number={3},  pages={1--30},  year={2023},  publisher={ACM New York, NY, USA}}",
+        "isDownloaded": false
+    },
+    "10": {
+        "title": "Gradient-based adversarial attacks against text transformers",
+        "bibtex": "@article{guo2021gradient,  title={Gradient-based adversarial attacks against text transformers},  author={Guo, Chuan and Sablayrolles, Alexandre and J{\\'e}gou, Herv{\\'e} and Kiela, Douwe},  journal={arXiv preprint arXiv:2104.13733},  year={2021}}",
+        "isDownloaded": false
+    },
+    "11": {
+        "title": "A gradient-based approach for adversarial attack on deep learning-based network intrusion detection systems",
+        "bibtex": "@article{mohammadian2023gradient,  title={A gradient-based approach for adversarial attack on deep learning-based network intrusion detection systems},  author={Mohammadian, Hesamodin and Ghorbani, Ali A and Lashkari, Arash Habibi},  journal={Applied Soft Computing},  volume={137},  pages={110173},  year={2023},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "12": {
+        "title": "Adequacy of the gradient-descent method for classifier evasion attacks",
+        "bibtex": "@inproceedings{han2018adequacy,  title={Adequacy of the gradient-descent method for classifier evasion attacks},  author={Han, Yi and Rubinstein, Benjamin},  booktitle={Workshops at the Thirty-Second AAAI Conference on Artificial Intelligence},  year={2018}}",
+        "isDownloaded": false
+    },
+    "13": {
+        "title": "Fence: Feasible evasion attacks on neural networks in constrained environments",
+        "bibtex": "@article{chernikova2022fence,  title={Fence: Feasible evasion attacks on neural networks in constrained environments},  author={Chernikova, Alesia and Oprea, Alina},  journal={ACM Transactions on Privacy and Security},  volume={25},  number={4},  pages={1--34},  year={2022},  publisher={ACM New York, NY}}",
+        "isDownloaded": false
+    },
+    "14": {
+        "title": "Exploring gradient-based evasion techniques against automotive intrusion detection systems",
+        "bibtex": "@article{cerracchio2022exploring,  title={Exploring gradient-based evasion techniques against automotive intrusion detection systems},  author={Cerracchio, Paolo},  year={2022}}",
+        "isDownloaded": false
+    },
+    "15": {
+        "title": "Do gradient-based explanations tell anything about adversarial robustness to android malware?",
+        "bibtex": "@article{melis2022gradient,  title={Do gradient-based explanations tell anything about adversarial robustness to android malware?},  author={Melis, Marco and Scalas, Michele and Demontis, Ambra and Maiorca, Davide and Biggio, Battista and Giacinto, Giorgio and Roli, Fabio},  journal={International journal of machine learning and cybernetics},  pages={1--16},  year={2022},  publisher={Springer}}",
+        "isDownloaded": false
+    },
+    "16": {
+        "title": "Don't paint it black: White-box explanations for deep learning in computer security",
+        "bibtex": "@article{warnecke2019don,  title={Don\u2019t paint it black: White-box explanations for deep learning in computer security},  author={Warnecke, Alexander and Arp, Daniel and Wressnegger, Christian and Rieck, Konrad},  journal={CoRR},  year={2019}}",
+        "isDownloaded": false
+    },
+    "17": {
+        "title": "Adversarial Attacks on Machine Learning Cybersecurity Defenses in Cloud Systems",
+        "bibtex": "@article{mathewadversarial,  title={Adversarial Attacks on Machine Learning Cybersecurity Defenses in Cloud Systems},  author={Mathew, Alex}}",
+        "isDownloaded": false
+    },
+    "18": {
+        "title": "White-Box Concealment Attacks Against Anomaly Detectors for Cyber-Physical Systems",
+        "bibtex": "@inproceedings{erba2023white,  title={White-Box Concealment Attacks Against Anomaly Detectors for Cyber-Physical Systems},  author={Erba, Alessandro and Tippenhauer, Nils Ole},  booktitle={International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment},  pages={111--131},  year={2023},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "19": {
+        "title": "Obfuscated gradients give a false sense of security: Circumventing defenses to adversarial examples",
+        "bibtex": "@inproceedings{athalye2018obfuscated,  title={Obfuscated gradients give a false sense of security: Circumventing defenses to adversarial examples},  author={Athalye, Anish and Carlini, Nicholas and Wagner, David},  booktitle={International conference on machine learning},  pages={274--283},  year={2018},  organization={PMLR}}",
+        "isDownloaded": false
+    },
+    "20": {
+        "title": "Countering Adversarial Inference Evasion Attacks Towards ML-Based Smart Lock in Cyber-Physical System Context",
+        "bibtex": "@inproceedings{vahakainu2021countering,  title={Countering Adversarial Inference Evasion Attacks Towards ML-Based Smart Lock in Cyber-Physical System Context},  author={V{\\\"a}h{\\\"a}kainu, Petri and Lehto, Martti and Kariluoto, Antti},  booktitle={Cybersecurity, Privacy and Freedom Protection in the Connected World: Proceedings of the 13th International Conference on Global Security, Safety and Sustainability, London, January 2021},  pages={157--169},  year={2021},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "21": {
+        "title": "A gradient-based pixel-domain attack against SVM detection of global image manipulations",
+        "bibtex": "@inproceedings{chen2017gradient,  title={A gradient-based pixel-domain attack against SVM detection of global image manipulations},  author={Chen, Zhipeng and Tondi, Benedetta and Li, Xiaolong and Ni, Rongrong and Zhao, Yao and Barni, Mauro},  booktitle={2017 IEEE workshop on information forensics and security (WIFS)},  pages={1--6},  year={2017},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "22": {
+        "title": "Adversarial attacks and defenses in image classification: A practical perspective",
+        "bibtex": "@inproceedings{chen2022adversarial,  title={Adversarial attacks and defenses in image classification: A practical perspective},  author={Chen, Yongkang and Zhang, Ming and Li, Jin and Kuang, Xiaohui},  booktitle={2022 7th International Conference on Image, Vision and Computing (ICIVC)},  pages={424--430},  year={2022},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "23": {
+        "title": "TextTricker: Loss-based and gradient-based adversarial attacks on text classification models",
+        "bibtex": "@article{xu2020texttricker,  title={TextTricker: Loss-based and gradient-based adversarial attacks on text classification models},  author={Xu, Jincheng and Du, Qingfeng},  journal={Engineering Applications of Artificial Intelligence},  volume={92},  pages={103641},  year={2020},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "24": {
+        "title": "Evading defenses to transferable adversarial examples by translation-invariant attacks",
+        "bibtex": "@inproceedings{dong2019evading,  title={Evading defenses to transferable adversarial examples by translation-invariant attacks},  author={Dong, Yinpeng and Pang, Tianyu and Su, Hang and Zhu, Jun},  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},  pages={4312--4321},  year={2019}}",
+        "isDownloaded": false
+    },
+    "25": {
+        "title": "Defending against physically realizable attacks on image classification",
+        "bibtex": "@article{wu2019defending,  title={Defending against physically realizable attacks on image classification},  author={Wu, Tong and Tong, Liang and Vorobeychik, Yevgeniy},  journal={arXiv preprint arXiv:1909.09552},  year={2019}}",
+        "isDownloaded": false
+    },
+    "26": {
+        "title": "A large-scale multiple-objective method for black-box attack against object detection",
+        "bibtex": "@inproceedings{liang2022large,  title={A large-scale multiple-objective method for black-box attack against object detection},  author={Liang, Siyuan and Li, Longkang and Fan, Yanbo and Jia, Xiaojun and Li, Jingzhi and Wu, Baoyuan and Cao, Xiaochun},  booktitle={European Conference on Computer Vision},  pages={619--636},  year={2022},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "27": {
+        "title": "We can always catch you: Detecting adversarial patched objects with or without signature",
+        "bibtex": "@article{liang2021we,  title={We can always catch you: Detecting adversarial patched objects with or without signature},  author={Liang, Bin and Li, Jiachun and Huang, Jianjun},  journal={arXiv preprint arXiv:2106.05261},  year={2021}}",
+        "isDownloaded": false
+    },
+    "28": {
+        "title": "Robustness evaluation of object detection models: a gradient attack method based on spatial sensitivity",
+        "bibtex": "@inproceedings{fu2023robustness,  title={Robustness evaluation of object detection models: a gradient attack method based on spatial sensitivity},  author={Fu, Kai and Wang, Mingzheng and Meng, Kuangyin and Shao, Changbin},  booktitle={Second International Conference on Electronic Information Technology (EIT 2023)},  volume={12719},  pages={780--785},  year={2023},  organization={SPIE}}",
+        "isDownloaded": false
+    },
+    "29": {
+        "title": "At-bod: An adversarial attack on fool dnn-based blackbox object detection models",
+        "bibtex": "@article{elaalami2022bod,  title={At-bod: An adversarial attack on fool dnn-based blackbox object detection models},  author={Elaalami, Ilham A and Olatunji, Sunday O and Zagrouba, Rachid M},  journal={Applied Sciences},  volume={12},  number={4},  pages={2003},  year={2022},  publisher={MDPI}}",
+        "isDownloaded": false
+    },
+    "30": {
+        "title": "Object-Aware Transfer-Based Black-Box Adversarial Attack on Object Detector",
+        "bibtex": "@inproceedings{leng2023object,  title={Object-Aware Transfer-Based Black-Box Adversarial Attack on Object Detector},  author={Leng, Zhuo and Cheng, Zesen and Wei, Pengxu and Chen, Jie},  booktitle={Chinese Conference on Pattern Recognition and Computer Vision (PRCV)},  pages={278--289},  year={2023},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "31": {
+        "title": "Gradient correction for white-box adversarial attacks",
+        "bibtex": "@article{liu2023gradient,  title={Gradient correction for white-box adversarial attacks},  author={Liu, Hongying and Ge, Zhijin and Zhou, Zhenyu and Shang, Fanhua and Liu, Yuanyuan and Jiao, Licheng},  journal={IEEE Transactions on Neural Networks and Learning Systems},  year={2023},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "32": {
+        "title": "Beating white-box defenses with black-box attacks",
+        "bibtex": "@inproceedings{kumova2021beating,  title={Beating white-box defenses with black-box attacks},  author={Kumov{\\'a}, V{\\v{e}}ra and Pil{\\'a}t, Martin},  booktitle={2021 International Joint Conference on Neural Networks (IJCNN)},  pages={1--8},  year={2021},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "33": {
+        "title": "Similarity-based gray-box adversarial attack against deep face recognition",
+        "bibtex": "@inproceedings{wang2021similarity,  title={Similarity-based gray-box adversarial attack against deep face recognition},  author={Wang, Hanrui and Wang, Shuo and Jin, Zhe and Wang, Yandan and Chen, Cunjian and Tistarelli, Massimo},  booktitle={2021 16th IEEE international conference on automatic face and gesture recognition (FG 2021)},  pages={1--8},  year={2021},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "34": {
+        "title": "Bayesian optimization for black-box evasion of machine learning systems",
+        "bibtex": "@phdthesis{munoz2017bayesian,  title={Bayesian optimization for black-box evasion of machine learning systems},  author={Munoz-Gonz{\\'a}lez, Luis},  year={2017},  school={PhD thesis, Imperial College London}}",
+        "isDownloaded": false
+    },
+    "35": {
+        "title": "Meta gradient adversarial attack",
+        "bibtex": "@inproceedings{yuan2021meta,  title={Meta gradient adversarial attack},  author={Yuan, Zheng and Zhang, Jie and Jia, Yunpei and Tan, Chuanqi and Xue, Tao and Shan, Shiguang},  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},  pages={7748--7757},  year={2021}}",
+        "isDownloaded": false
+    },
+    "36": {
+        "title": "Gradient similarity: An explainable approach to detect adversarial attacks against deep learning",
+        "bibtex": "@article{dhaliwal2018gradient,  title={Gradient similarity: An explainable approach to detect adversarial attacks against deep learning},  author={Dhaliwal, Jasjeet and Shintre, Saurabh},  journal={arXiv preprint arXiv:1806.10707},  year={2018}}",
+        "isDownloaded": false
+    },
+    "37": {
+        "title": "Steal Now and Attack Later: Evaluating Robustness of Object Detection against Black-box Adversarial Attacks",
+        "bibtex": "@article{chen2024steal,  title={Steal Now and Attack Later: Evaluating Robustness of Object Detection against Black-box Adversarial Attacks},  author={Chen, Erh-Chung and Chen, Pin-Yu and Chung, I and Lee, Che-Rung and others},  journal={arXiv preprint arXiv:2404.15881},  year={2024}}",
+        "isDownloaded": false
+    },
+    "38": {
+        "title": "Deepxplore: Automated whitebox testing of deep learning systems",
+        "bibtex": "@inproceedings{pei2017deepxplore,  title={Deepxplore: Automated whitebox testing of deep learning systems},  author={Pei, Kexin and Cao, Yinzhi and Yang, Junfeng and Jana, Suman},  booktitle={proceedings of the 26th Symposium on Operating Systems Principles},  pages={1--18},  year={2017}}",
+        "isDownloaded": false
+    },
+    "39": {
+        "title": "Adversarial examples for cnn-based malware detectors",
+        "bibtex": "@article{chen2019adversarial,  title={Adversarial examples for cnn-based malware detectors},  author={Chen, Bingcai and Ren, Zhongru and Yu, Chao and Hussain, Iftikhar and Liu, Jintao},  journal={IEEE Access},  volume={7},  pages={54360--54371},  year={2019},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "40": {
+        "title": "Patch of Invisibility: Naturalistic Black-Box Adversarial Attacks on Object De-tectors",
+        "bibtex": "@article{lapid2023patch,  title={Patch of Invisibility: Naturalistic Black-Box Adversarial Attacks on Object De-tectors},  author={Lapid, Raz and Sipper, Moshe},  journal={arXiv preprint arXiv:2303.04238},  year={2023}}",
+        "isDownloaded": false
+    },
+    "41": {
+        "title": "{Devil's} whisper: A general approach for physical adversarial attacks against commercial black-box speech recognition devices",
+        "bibtex": "@inproceedings{chen2020devil,  title={$\\{$Devil\u2019s$\\}$ whisper: A general approach for physical adversarial attacks against commercial black-box speech recognition devices},  author={Chen, Yuxuan and Yuan, Xuejing and Zhang, Jiangshan and Zhao, Yue and Zhang, Shengzhi and Chen, Kai and Wang, XiaoFeng},  booktitle={29th USENIX Security Symposium (USENIX Security 20)},  pages={2667--2684},  year={2020}}",
+        "isDownloaded": false
+    },
+    "42": {
+        "title": "{CommanderSong}: A systematic approach for practical adversarial voice recognition",
+        "bibtex": "@inproceedings{yuan2018commandersong,  title={$\\{$CommanderSong$\\}$: A systematic approach for practical adversarial voice recognition},  author={Yuan, Xuejing and Chen, Yuxuan and Zhao, Yue and Long, Yunhui and Liu, Xiaokang and Chen, Kai and Zhang, Shengzhi and Huang, Heqing and Wang, Xiaofeng and Gunter, Carl A},  booktitle={27th USENIX security symposium (USENIX security 18)},  pages={49--64},  year={2018}}",
+        "isDownloaded": false
+    },
+    "43": {
+        "title": "Imperceptible, robust, and targeted adversarial examples for automatic speech recognition",
+        "bibtex": "@inproceedings{qin2019imperceptible,  title={Imperceptible, robust, and targeted adversarial examples for automatic speech recognition},  author={Qin, Yao and Carlini, Nicholas and Cottrell, Garrison and Goodfellow, Ian and Raffel, Colin},  booktitle={International conference on machine learning},  pages={5231--5240},  year={2019},  organization={PMLR}}",
+        "isDownloaded": false
+    },
+    "44": {
+        "title": "Evaluating the vulnerability of end-to-end automatic speech recognition models to membership inference attacks",
+        "bibtex": "@article{shah2021evaluating,  title={Evaluating the vulnerability of end-to-end automatic speech recognition models to membership inference attacks},  author={Shah, Muhammad A and Szurley, Joseph and Mueller, Markus and Mouchtaris, Thanasis and Droppo, Jasha},  year={2021}}",
+        "isDownloaded": false
+    },
+    "45": {
+        "title": "SegmentPerturb: effective black-box hidden voice attack on commercial ASR systems via selective deletion",
+        "bibtex": "@inproceedings{wang2021segmentperturb,  title={SegmentPerturb: effective black-box hidden voice attack on commercial ASR systems via selective deletion},  author={Wang, Ganyu and Martin, Miguel Vargas},  booktitle={2021 18th International Conference on Privacy, Security and Trust (PST)},  pages={1--12},  year={2021},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "46": {
+        "title": "Beyond the black box",
+        "bibtex": "@article{nevile2004beyond,  title={Beyond the black box},  author={Nevile, Maurice},  journal={Talk-in-interaction in the cockpit airlines},  year={2004}}",
+        "isDownloaded": false
+    },
+    "47": {
+        "title": "Unprivileged black-box detection of user-space keyloggers",
+        "bibtex": "@article{ortolani2012unprivileged,  title={Unprivileged black-box detection of user-space keyloggers},  author={Ortolani, Stefano and Giuffrida, Cristiano and Crispo, Bruno},  journal={IEEE Transactions on dependable and secure computing},  volume={10},  number={1},  pages={40--52},  year={2012},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "48": {
+        "title": "Evading deepfake-image detectors with white-and black-box attacks",
+        "bibtex": "@inproceedings{carlini2020evading,  title={Evading deepfake-image detectors with white-and black-box attacks},  author={Carlini, Nicholas and Farid, Hany},  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition workshops},  pages={658--659},  year={2020}}",
+        "isDownloaded": false
+    },
+    "49": {
+        "title": "ALIF: Low-Cost Adversarial Audio Attacks on Black-Box Speech Platforms using Linguistic Features",
+        "bibtex": "@inproceedings{cheng2023alif,  title={ALIF: Low-Cost Adversarial Audio Attacks on Black-Box Speech Platforms using Linguistic Features},  author={Cheng, Peng and Wang, Yuwei and Huang, Peng and Ba, Zhongjie and Lin, Xiaodong and Lin, Feng and Lu, Li and Ren, Kui},  booktitle={2024 IEEE Symposium on Security and Privacy (SP)},  pages={56--56},  year={2023},  organization={IEEE Computer Society}}",
+        "isDownloaded": false
+    },
+    "50": {
+        "title": "FAAG: Fast Adversarial Audio Generation through Interactive Attack Optimisation",
+        "bibtex": "@article{miao2022faag,  title={FAAG: Fast Adversarial Audio Generation through Interactive Attack Optimisation},  author={Miao, Yuantian and Chen, Chao and Pan, Lei and Zhang, Jun and Xiang, Yang},  journal={arXiv preprint arXiv:2202.05416},  year={2022}}",
+        "isDownloaded": false
+    },
+    "51": {
+        "title": "Evasion of honeypot detection mechanisms through improved interactivity of ICS-based systems",
+        "bibtex": "@phdthesis{dougherty2020evasion,  title={Evasion of honeypot detection mechanisms through improved interactivity of ICS-based systems},  author={Dougherty, Jeffrey T},  year={2020},  school={Monterey, CA; Naval Postgraduate School}}",
+        "isDownloaded": false
+    },
+    "52": {
+        "title": "Active machine learning adversarial attack detection in the user feedback process",
+        "bibtex": "@article{kebande2021active,  title={Active machine learning adversarial attack detection in the user feedback process},  author={Kebande, Victor R and Alawadi, Sadi and Awaysheh, Feras M and Persson, Jan A},  journal={IEEE Access},  volume={9},  pages={36908--36923},  year={2021},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "53": {
+        "title": "Offensive security: Cyber threat intelligence enrichment with counterintelligence and counterattack",
+        "bibtex": "@article{rana2022offensive,  title={Offensive security: Cyber threat intelligence enrichment with counterintelligence and counterattack},  author={Rana, Muhammad Usman and Ellahi, Osama and Alam, Masoom and Webber, Julian L and Mehbodniya, Abolfazl and Khan, Shawal},  journal={IEEE Access},  volume={10},  pages={108760--108774},  year={2022},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "54": {
+        "title": "Cy-through: toward a cybersecurity simulation for supporting live, virtual, and constructive interoperability",
+        "bibtex": "@article{lee2021cy,  title={Cy-through: toward a cybersecurity simulation for supporting live, virtual, and constructive interoperability},  author={Lee, Donghwan and Kim, Donghwa and Ahn, Myung Kil and Jang, Wonwoo and Lee, Wonjun},  journal={IEEE Access},  volume={9},  pages={10041--10053},  year={2021},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "55": {
+        "title": "Investigating anti-evasion malware triggers using automated sandbox reconfiguration techniques",
+        "bibtex": "@article{mills2020investigating,  title={Investigating anti-evasion malware triggers using automated sandbox reconfiguration techniques},  author={Mills, Alan and Legg, Phil},  journal={Journal of Cybersecurity and Privacy},  volume={1},  number={1},  pages={19--39},  year={2020},  publisher={MDPI}}",
+        "isDownloaded": false
+    },
+    "56": {
+        "title": "Black-box generation of adversarial text sequences to evade deep learning classifiers",
+        "bibtex": "@inproceedings{gao2018black,  title={Black-box generation of adversarial text sequences to evade deep learning classifiers},  author={Gao, Ji and Lanchantin, Jack and Soffa, Mary Lou and Qi, Yanjun},  booktitle={2018 IEEE Security and Privacy Workshops (SPW)},  pages={50--56},  year={2018},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "57": {
+        "title": "KameleonFuzz: evolutionary fuzzing for black-box XSS detection",
+        "bibtex": "@inproceedings{duchene2014kameleonfuzz,  title={KameleonFuzz: evolutionary fuzzing for black-box XSS detection},  author={Duchene, Fabien and Rawat, Sanjay and Richier, Jean-Luc and Groz, Roland},  booktitle={Proceedings of the 4th ACM conference on Data and application security and privacy},  pages={37--48},  year={2014}}",
+        "isDownloaded": false
+    },
+    "58": {
+        "title": "Sok: Pitfalls in evaluating black-box attacks",
+        "bibtex": "@inproceedings{suya2024sok,  title={Sok: Pitfalls in evaluating black-box attacks},  author={Suya, Fnu and Suri, Anshuman and Zhang, Tingwei and Hong, Jingtao and Tian, Yuan and Evans, David},  booktitle={2024 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)},  pages={387--407},  year={2024},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "59": {
+        "title": "Practical black-box attacks against machine learning",
+        "bibtex": "@inproceedings{papernot2017practical,  title={Practical black-box attacks against machine learning},  author={Papernot, Nicolas and McDaniel, Patrick and Goodfellow, Ian and Jha, Somesh and Celik, Z Berkay and Swami, Ananthram},  booktitle={Proceedings of the 2017 ACM on Asia conference on computer and communications security},  pages={506--519},  year={2017}}",
+        "isDownloaded": false
+    },
+    "60": {
+        "title": "Adversarial feature selection against evasion attacks",
+        "bibtex": "@article{zhang2015adversarial,  title={Adversarial feature selection against evasion attacks},  author={Zhang, Fei and Chan, Patrick PK and Biggio, Battista and Yeung, Daniel S and Roli, Fabio},  journal={IEEE transactions on cybernetics},  volume={46},  number={3},  pages={766--777},  year={2015},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "61": {
+        "title": "{GhostImage}: Remote perception attacks against camera-based image classification systems",
+        "bibtex": "@inproceedings{man2020ghostimage,  title={$\\{$GhostImage$\\}$: Remote perception attacks against camera-based image classification systems},  author={Man, Yanmao and Li, Ming and Gerdes, Ryan},  booktitle={23rd International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2020)},  pages={317--332},  year={2020}}",
+        "isDownloaded": false
+    },
+    "62": {
+        "title": "Evasion-robust classification on binary domains",
+        "bibtex": "@article{li2018evasion,  title={Evasion-robust classification on binary domains},  author={Li, Bo and Vorobeychik, Yevgeniy},  journal={ACM Transactions on Knowledge Discovery from Data (TKDD)},  volume={12},  number={4},  pages={1--32},  year={2018},  publisher={ACM New York, NY, USA}}",
+        "isDownloaded": false
+    },
+    "63": {
+        "title": "Adversarial Evasion on LLMs",
+        "bibtex": "@article{guerraoui2024adversarial,  title={Adversarial Evasion on LLMs},  author={Guerraoui, Rachid and Pinot, Rafael},  journal={Large},  pages={181},  year={2024}}",
+        "isDownloaded": false
+    },
+    "64": {
+        "title": "Adversarial-Playground: A visualization suite showing how adversarial examples fool deep learning",
+        "bibtex": "@inproceedings{norton2017adversarial,  title={Adversarial-Playground: A visualization suite showing how adversarial examples fool deep learning},  author={Norton, Andrew P and Qi, Yanjun},  booktitle={2017 IEEE symposium on visualization for cyber security (VizSec)},  pages={1--4},  year={2017},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "65": {
+        "title": "Evasion attacks against machine learning at test time",
+        "bibtex": "@inproceedings{biggio2013evasion,  title={Evasion attacks against machine learning at test time},  author={Biggio, Battista and Corona, Igino and Maiorca, Davide and Nelson, Blaine and {\\v{S}}rndi{\\'c}, Nedim and Laskov, Pavel and Giacinto, Giorgio and Roli, Fabio},  booktitle={Machine Learning and Knowledge Discovery in Databases: European Conference, ECML PKDD 2013, Prague, Czech Republic, September 23-27, 2013, Proceedings, Part III 13},  pages={387--402},  year={2013},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "66": {
+        "title": "The use of artificial intelligence vulnerability testing platforms in attacking object detection",
+        "bibtex": "@mastersthesis{antila2024use,  title={The use of artificial intelligence vulnerability testing platforms in attacking object detection},  author={Antila, Anssi},  year={2024},  school={A. Antila}}",
+        "isDownloaded": false
+    },
+    "67": {
+        "title": "Adversarial t-shirt! evading person detectors in a physical world",
+        "bibtex": "@inproceedings{xu2020adversarial,  title={Adversarial t-shirt! evading person detectors in a physical world},  author={Xu, Kaidi and Zhang, Gaoyuan and Liu, Sijia and Fan, Quanfu and Sun, Mengshu and Chen, Hongge and Chen, Pin-Yu and Wang, Yanzhi and Lin, Xue},  booktitle={Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part V 16},  pages={665--681},  year={2020},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "68": {
+        "title": "Detection defenses: An empty promise against adversarial patch attacks on optical flow",
+        "bibtex": "@inproceedings{scheurer2024detection,  title={Detection defenses: An empty promise against adversarial patch attacks on optical flow},  author={Scheurer, Erik and Schmalfuss, Jenny and Lis, Alexander and Bruhn, Andr{\\'e}s},  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},  pages={6489--6498},  year={2024}}",
+        "isDownloaded": false
+    },
+    "69": {
+        "title": "Adversarial attack based on perturbation of contour region to evade steganalysis-based detection",
+        "bibtex": "@article{na2021adversarial,  title={Adversarial attack based on perturbation of contour region to evade steganalysis-based detection},  author={Na, Hyunsik and Ryu, Gwonsang and Choi, Daeseon},  journal={IEEE Access},  volume={9},  pages={122308--122321},  year={2021},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "70": {
+        "title": "An appealing adversarial attack for human detection networks",
+        "bibtex": "@article{de2022appealing,  title={An appealing adversarial attack for human detection networks},  author={De Paolis, Nicol{\\`o}},  year={2022}}",
+        "isDownloaded": false
+    },
+    "71": {
+        "title": "Object detection",
+        "bibtex": "@incollection{amit2021object,  title={Object detection},  author={Amit, Yali and Felzenszwalb, Pedro and Girshick, Ross},  booktitle={Computer Vision: A Reference Guide},  pages={875--883},  year={2021},  publisher={Springer}}",
+        "isDownloaded": false
+    },
+    "72": {
+        "title": "Feature-guided black-box safety testing of deep neural networks",
+        "bibtex": "@inproceedings{wicker2018feature,  title={Feature-guided black-box safety testing of deep neural networks},  author={Wicker, Matthew and Huang, Xiaowei and Kwiatkowska, Marta},  booktitle={Tools and Algorithms for the Construction and Analysis of Systems: 24th International Conference, TACAS 2018, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018, Thessaloniki, Greece, April 14-20, 2018, Proceedings, Part I 24},  pages={408--426},  year={2018},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "73": {
+        "title": "Making an invisibility cloak: Real world adversarial attacks on object detectors",
+        "bibtex": "@inproceedings{wu2020making,  title={Making an invisibility cloak: Real world adversarial attacks on object detectors},  author={Wu, Zuxuan and Lim, Ser-Nam and Davis, Larry S and Goldstein, Tom},  booktitle={Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part IV 16},  pages={1--17},  year={2020},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "74": {
+        "title": "Adversarial deep ensemble: Evasion attacks and defenses for malware detection",
+        "bibtex": "@article{li2020adversarial,  title={Adversarial deep ensemble: Evasion attacks and defenses for malware detection},  author={Li, Deqiang and Li, Qianmu},  journal={IEEE Transactions on Information Forensics and Security},  volume={15},  pages={3886--3900},  year={2020},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "75": {
+        "title": "Multimedia concepts on object detection and recognition with F1 car simulation using convolutional layers",
+        "bibtex": "@article{balakrishnan2021multimedia,  title={Multimedia concepts on object detection and recognition with F1 car simulation using convolutional layers},  author={Balakrishnan, Amutha and Ramana, Kadiyala and Dhiman, Gaurav and Ashok, Gokul and Bhaskar, Vidhyacharan and Sharma, Ashutosh and Gaba, Gurjot Singh and Masud, Mehedi and Al-Amri, Jehad F},  journal={Wireless Communications and Mobile Computing},  volume={2021},  number={1},  pages={5543720},  year={2021},  publisher={Wiley Online Library}}",
+        "isDownloaded": false
+    },
+    "76": {
+        "title": "Efficient decision-based black-box adversarial attacks on face recognition",
+        "bibtex": "@inproceedings{dong2019efficient,  title={Efficient decision-based black-box adversarial attacks on face recognition},  author={Dong, Yinpeng and Su, Hang and Wu, Baoyuan and Li, Zhifeng and Liu, Wei and Zhang, Tong and Zhu, Jun},  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},  pages={7714--7722},  year={2019}}",
+        "isDownloaded": false
+    },
+    "77": {
+        "title": "Automatically evading classifiers",
+        "bibtex": "@inproceedings{xu2016automatically,  title={Automatically evading classifiers},  author={Xu, Weilin and Qi, Yanjun and Evans, David},  booktitle={Proceedings of the 2016 network and distributed systems symposium},  volume={10},  year={2016}}",
+        "isDownloaded": false
+    },
+    "78": {
+        "title": "Solving the black box problem: A normative framework for explainable artificial intelligence",
+        "bibtex": "@article{zednik2021solving,  title={Solving the black box problem: A normative framework for explainable artificial intelligence},  author={Zednik, Carlos},  journal={Philosophy \\& technology},  volume={34},  number={2},  pages={265--288},  year={2021},  publisher={Springer}}",
+        "isDownloaded": false
+    },
+    "79": {
+        "title": "Autozoom: Autoencoder-based zeroth order optimization method for attacking black-box neural networks",
+        "bibtex": "@inproceedings{tu2019autozoom,  title={Autozoom: Autoencoder-based zeroth order optimization method for attacking black-box neural networks},  author={Tu, Chun-Chen and Ting, Paishun and Chen, Pin-Yu and Liu, Sijia and Zhang, Huan and Yi, Jinfeng and Hsieh, Cho-Jui and Cheng, Shin-Ming},  booktitle={Proceedings of the AAAI conference on artificial intelligence},  volume={33},  number={01},  pages={742--749},  year={2019}}",
+        "isDownloaded": false
+    },
+    "80": {
+        "title": "Unlocking adversarial transferability: a security threat towards deep learning-based surveillance systems via black box inference attack-a case study on face mask\u00a0\u2026",
+        "bibtex": "@article{sheikh2024unlocking,  title={Unlocking adversarial transferability: a security threat towards deep learning-based surveillance systems via black box inference attack-a case study on face mask surveillance},  author={Sheikh, Burhan Ul Haque and Zafar, Aasim},  journal={Multimedia Tools and Applications},  volume={83},  number={8},  pages={24749--24775},  year={2024},  publisher={Springer}}",
+        "isDownloaded": false
+    },
+    "81": {
+        "title": "Selective audio adversarial example in evasion attack on speech recognition system",
+        "bibtex": "@article{kwon2019selective,  title={Selective audio adversarial example in evasion attack on speech recognition system},  author={Kwon, Hyun and Kim, Yongchul and Yoon, Hyunsoo and Choi, Daeseon},  journal={IEEE Transactions on Information Forensics and Security},  volume={15},  pages={526--538},  year={2019},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "82": {
+        "title": "Generating transferable adversarial examples for speech classification",
+        "bibtex": "@article{kim2023generating,  title={Generating transferable adversarial examples for speech classification},  author={Kim, Hoki and Park, Jinseong and Lee, Jaewook},  journal={Pattern Recognition},  volume={137},  pages={109286},  year={2023},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "83": {
+        "title": "Demystifying limited adversarial transferability in automatic speech recognition systems",
+        "bibtex": "@inproceedings{abdullah2021demystifying,  title={Demystifying limited adversarial transferability in automatic speech recognition systems},  author={Abdullah, Hadi and Karlekar, Aditya and Bindschaedler, Vincent and Traynor, Patrick},  booktitle={International Conference on Learning Representations (ICLR)},  year={2021}}",
+        "isDownloaded": false
+    },
+    "84": {
+        "title": "Hear\" no evil\", see\" kenansville\": Efficient and transferable black-box attacks on speech recognition and voice identification systems",
+        "bibtex": "@inproceedings{abdullah2021hear,  title={Hear\" no evil\", see\" kenansville\": Efficient and transferable black-box attacks on speech recognition and voice identification systems},  author={Abdullah, Hadi and Rahman, Muhammad Sajidur and Garcia, Washington and Warren, Kevin and Yadav, Anurag Swarnim and Shrimpton, Tom and Traynor, Patrick},  booktitle={2021 IEEE Symposium on Security and Privacy (SP)},  pages={712--729},  year={2021},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "85": {
+        "title": "AS2T: Arbitrary Source-To-Target Adversarial Attack on Speaker Recognition Systems",
+        "bibtex": "@article{chen2022as2t,  title={AS2T: Arbitrary source-to-target adversarial attack on speaker recognition systems},  author={Chen, Guangke and Zhao, Zhe and Song, Fu and Chen, Sen and Fan, Lingling and Liu, Yang},  journal={IEEE Transactions on Dependable and Secure Computing},  year={2022},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "86": {
+        "title": "Your Attack Is Too DUMB: Formalizing Attacker Scenarios for Adversarial Transferability",
+        "bibtex": "@inproceedings{alecci2023your,  title={Your Attack Is Too DUMB: Formalizing Attacker Scenarios for Adversarial Transferability},  author={Alecci, Marco and Conti, Mauro and Marchiori, Francesco and Martinelli, Luca and Pajola, Luca},  booktitle={Proceedings of the 26th International Symposium on Research in Attacks, Intrusions and Defenses},  pages={315--329},  year={2023}}",
+        "isDownloaded": false
+    },
+    "87": {
+        "title": "Practical Adversarial Attacks Against Black Box Speech Recognition Systems and Devices",
+        "bibtex": "@phdthesis{chen2020practical,  title={Practical Adversarial Attacks Against Black Box Speech Recognition Systems and Devices},  author={Chen, Yuxuan},  year={2020},  school={Florida Institute of Technology}}",
+        "isDownloaded": false
+    },
+    "88": {
+        "title": "Transferability in machine learning: from phenomena to black-box attacks using adversarial samples",
+        "bibtex": "@article{papernot2016transferability,  title={Transferability in machine learning: from phenomena to black-box attacks using adversarial samples},  author={Papernot, Nicolas and McDaniel, Patrick and Goodfellow, Ian},  journal={arXiv preprint arXiv:1605.07277},  year={2016}}",
+        "isDownloaded": false
+    },
+    "89": {
+        "title": "A General Approach to Inaudible Adversarial Perturbations in a Black-box Setting",
+        "bibtex": "@misc{sorell2021general,  title={A General Approach to Inaudible Adversarial Perturbations in a Black-box Setting},  author={S{\\\"o}rell, Johan},  year={2021}}",
+        "isDownloaded": false
+    },
+    "90": {
+        "title": "Fencesitter: Black-box, content-agnostic, and synchronization-free enrollment-phase attacks on speaker recognition systems",
+        "bibtex": "@inproceedings{deng2022fencesitter,  title={Fencesitter: Black-box, content-agnostic, and synchronization-free enrollment-phase attacks on speaker recognition systems},  author={Deng, Jiangyi and Chen, Yanjiao and Xu, Wenyuan},  booktitle={Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security},  pages={755--767},  year={2022}}",
+        "isDownloaded": false
+    },
+    "91": {
+        "title": "Why do adversarial attacks transfer? explaining transferability of evasion and poisoning attacks",
+        "bibtex": "@inproceedings{demontis2019adversarial,  title={Why do adversarial attacks transfer? explaining transferability of evasion and poisoning attacks},  author={Demontis, Ambra and Melis, Marco and Pintor, Maura and Jagielski, Matthew and Biggio, Battista and Oprea, Alina and Nita-Rotaru, Cristina and Roli, Fabio},  booktitle={28th USENIX security symposium (USENIX security 19)},  pages={321--338},  year={2019}}",
+        "isDownloaded": false
+    },
+    "92": {
+        "title": "When does machine learning {FAIL}? generalized transferability for evasion and poisoning attacks",
+        "bibtex": "@inproceedings{suciu2018does,  title={When does machine learning $\\{$FAIL$\\}$? generalized transferability for evasion and poisoning attacks},  author={Suciu, Octavian and Marginean, Radu and Kaya, Yigitcan and Daume III, Hal and Dumitras, Tudor},  booktitle={27th USENIX Security Symposium (USENIX Security 18)},  pages={1299--1316},  year={2018}}",
+        "isDownloaded": false
+    },
+    "93": {
+        "title": "Demystifying the transferability of adversarial attacks in computer networks",
+        "bibtex": "@article{nowroozi2022demystifying,  title={Demystifying the transferability of adversarial attacks in computer networks},  author={Nowroozi, Ehsan and Mekdad, Yassine and Berenjestanaki, Mohammad Hajian and Conti, Mauro and El Fergougui, Abdeslam},  journal={IEEE Transactions on Network and Service Management},  volume={19},  number={3},  pages={3387--3400},  year={2022},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "94": {
+        "title": "Mitigating evasion attacks to deep neural networks via region-based classification",
+        "bibtex": "@inproceedings{cao2017mitigating,  title={Mitigating evasion attacks to deep neural networks via region-based classification},  author={Cao, Xiaoyu and Gong, Neil Zhenqiang},  booktitle={Proceedings of the 33rd Annual Computer Security Applications Conference},  pages={278--287},  year={2017}}",
+        "isDownloaded": false
+    },
+    "95": {
+        "title": "Transferability of adversarial examples in machine learning-based malware detection",
+        "bibtex": "@inproceedings{hu2022transferability,  title={Transferability of adversarial examples in machine learning-based malware detection},  author={Hu, Yang and Wang, Ning and Chen, Yimin and Lou, Wenjing and Hou, Y Thomas},  booktitle={2022 IEEE Conference on Communications and Network Security (CNS)},  pages={28--36},  year={2022},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "96": {
+        "title": "Data driven exploratory attacks on black box classifiers in adversarial domains",
+        "bibtex": "@article{sethi2018data,  title={Data driven exploratory attacks on black box classifiers in adversarial domains},  author={Sethi, Tegjyot Singh and Kantardzic, Mehmed},  journal={Neurocomputing},  volume={289},  pages={129--143},  year={2018},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "97": {
+        "title": "Evading black-box classifiers without breaking eggs",
+        "bibtex": "@inproceedings{debenedetti2024evading,  title={Evading black-box classifiers without breaking eggs},  author={Debenedetti, Edoardo and Carlini, Nicholas and Tram{\\`e}r, Florian},  booktitle={2024 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)},  pages={408--424},  year={2024},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "98": {
+        "title": "Black box attacks on deep anomaly detectors",
+        "bibtex": "@inproceedings{kuppa2019black,  title={Black box attacks on deep anomaly detectors},  author={Kuppa, Aditya and Grzonkowski, Slawomir and Asghar, Muhammad Rizwan and Le-Khac, Nhien-An},  booktitle={Proceedings of the 14th international conference on availability, reliability and security},  pages={1--10},  year={2019}}",
+        "isDownloaded": false
+    },
+    "99": {
+        "title": "Learning black-box attackers with transferable priors and query feedback",
+        "bibtex": "@article{yang2020learning,  title={Learning black-box attackers with transferable priors and query feedback},  author={Yang, Jiancheng and Jiang, Yangzhou and Huang, Xiaoyang and Ni, Bingbing and Zhao, Chenglong},  journal={Advances in Neural Information Processing Systems},  volume={33},  pages={12288--12299},  year={2020}}",
+        "isDownloaded": false
+    },
+    "100": {
+        "title": "Detect & reject for transferability of black-box adversarial attacks against network intrusion detection systems",
+        "bibtex": "@inproceedings{debicha2021detect,  title={Detect \\& reject for transferability of black-box adversarial attacks against network intrusion detection systems},  author={Debicha, Islam and Debatty, Thibault and Dricot, Jean-Michel and Mees, Wim and Kenaza, Tayeb},  booktitle={International Conference on Advances in Cyber Security},  pages={329--339},  year={2021},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "101": {
+        "title": "Robustness and Transferability of Adversarial Attacks on Different Image Classification Neural Networks",
+        "bibtex": "@article{smagulova2024robustness,  title={Robustness and Transferability of Adversarial Attacks on Different Image Classification Neural Networks},  author={Smagulova, Kamilya and Bacha, Lina and Fouda, Mohammed E and Kanj, Rouwaida and Eltawil, Ahmed},  journal={Electronics},  volume={13},  number={3},  pages={592},  year={2024},  publisher={MDPI}}",
+        "isDownloaded": false
+    },
+    "102": {
+        "title": "OMG-ATTACK: Self-Supervised On-Manifold Generation of Transferable Evasion Attacks",
+        "bibtex": "@inproceedings{bar2023omg,  title={OMG-ATTACK: Self-Supervised On-Manifold Generation of Transferable Evasion Attacks},  author={Bar Tal, Ofir and Haviv, Adi and Bermano, Amit H},  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},  pages={3696--3706},  year={2023}}",
+        "isDownloaded": false
+    },
+    "103": {
+        "title": "Improving transferability of adversarial patches on face recognition with generative models",
+        "bibtex": "@inproceedings{xiao2021improving,  title={Improving transferability of adversarial patches on face recognition with generative models},  author={Xiao, Zihao and Gao, Xianfeng and Fu, Chilin and Dong, Yinpeng and Gao, Wei and Zhang, Xiaolu and Zhou, Jun and Zhu, Jun},  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},  pages={11845--11854},  year={2021}}",
+        "isDownloaded": false
+    },
+    "104": {
+        "title": "Friend-safe evasion attack: An adversarial example that is correctly recognized by a friendly classifier",
+        "bibtex": "@article{kwon2018friend,  title={Friend-safe evasion attack: An adversarial example that is correctly recognized by a friendly classifier},  author={Kwon, Hyun and Kim, Yongchul and Park, Ki-Woong and Yoon, Hyunsoo and Choi, Daeseon},  journal={computers \\& security},  volume={78},  pages={380--397},  year={2018},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "105": {
+        "title": "Towards transferable targeted attack",
+        "bibtex": "@inproceedings{li2020towards,  title={Towards transferable targeted attack},  author={Li, Maosen and Deng, Cheng and Li, Tengjiao and Yan, Junchi and Gao, Xinbo and Huang, Heng},  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},  pages={641--649},  year={2020}}",
+        "isDownloaded": false
+    },
+    "106": {
+        "title": "Dynamic adversarial patch for evading object detection models",
+        "bibtex": "@article{hoory2020dynamic,  title={Dynamic adversarial patch for evading object detection models},  author={Hoory, Shahar and Shapira, Tzvika and Shabtai, Asaf and Elovici, Yuval},  journal={arXiv preprint arXiv:2010.13070},  year={2020}}",
+        "isDownloaded": false
+    },
+    "107": {
+        "title": "Active: Towards highly transferable 3d physical camouflage for universal and robust vehicle evasion",
+        "bibtex": "@inproceedings{suryanto2023active,  title={Active: Towards highly transferable 3d physical camouflage for universal and robust vehicle evasion},  author={Suryanto, Naufal and Kim, Yongsu and Larasati, Harashta Tatimma and Kang, Hyoeun and Le, Thi-Thu-Huong and Hong, Yoonyoung and Yang, Hunmin and Oh, Se-Yoon and Kim, Howon},  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},  pages={4305--4314},  year={2023}}",
+        "isDownloaded": false
+    },
+    "108": {
+        "title": "Boosting transferability of physical attack against detectors by redistributing separable attention",
+        "bibtex": "@article{zhang2023boosting,  title={Boosting transferability of physical attack against detectors by redistributing separable attention},  author={Zhang, Yu and Gong, Zhiqiang and Zhang, Yichuang and Bin, Kangcheng and Li, Yongqian and Qi, Jiahao and Wen, Hao and Zhong, Ping},  journal={Pattern Recognition},  volume={138},  pages={109435},  year={2023},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "109": {
+        "title": "Enhancing cross-task black-box transferability of adversarial examples with dispersion reduction",
+        "bibtex": "Error 403 (Forbidden)!!1403. That\u2019s an error.Your client does not have permission to get URL /scholar.bib?q=info:Cz-V2DDM_-kJ:scholar.google.com/&output=citation&scisdr=ClHkZlrGGAA:AFWwaeYAAAAAZngqzPPjxb9EbawTNRW2mQMJUuY&scisig=AFWwaeYAAAAAZngqzFtfUBXrzblsU8RvbPYfsZA&scisf=4&ct=citation&cd=-1&hl=de from this server. (Client IP address: 109.166.132.180) Please see Google's Terms of Service posted at https://policies.google.com/terms That\u2019s all we know.",
+        "isDownloaded": false
+    },
+    "110": {
+        "title": "Boosting the transferability of adversarial samples via attention",
+        "bibtex": "@inproceedings{wu2020boosting,  title={Boosting the transferability of adversarial samples via attention},  author={Wu, Weibin and Su, Yuxin and Chen, Xixian and Zhao, Shenglin and King, Irwin and Lyu, Michael R and Tai, Yu-Wing},  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},  pages={1161--1170},  year={2020}}",
+        "isDownloaded": false
+    },
+    "111": {
+        "title": "Making targeted black-box evasion attacks effective and efficient",
+        "bibtex": "@inproceedings{juuti2019making,  title={Making targeted black-box evasion attacks effective and efficient},  author={Juuti, Mika and Gul Atli, Buse and Asokan, N},  booktitle={Proceedings of the 12th ACM Workshop on Artificial Intelligence and Security},  pages={83--94},  year={2019}}",
+        "isDownloaded": false
+    },
+    "112": {
+        "title": "AMEBA: an adaptive approach to the black-box evasion of machine learning models",
+        "bibtex": "@inproceedings{calzavara2021ameba,  title={AMEBA: an adaptive approach to the black-box evasion of machine learning models},  author={Calzavara, Stefano and Cazzaro, Lorenzo and Lucchese, Claudio},  booktitle={Proceedings of the 2021 ACM Asia conference on computer and communications security},  pages={292--306},  year={2021}}",
+        "isDownloaded": false
+    },
+    "113": {
+        "title": "Simple black-box adversarial perturbations for deep networks",
+        "bibtex": "@article{narodytska2016simple,  title={Simple black-box adversarial perturbations for deep networks},  author={Narodytska, Nina and Kasiviswanathan, Shiva Prasad},  journal={arXiv preprint arXiv:1612.06299},  year={2016}}",
+        "isDownloaded": false
+    },
+    "114": {
+        "title": "Boosting black-box attack with partially transferred conditional adversarial distribution",
+        "bibtex": "@inproceedings{feng2022boosting,  title={Boosting black-box attack with partially transferred conditional adversarial distribution},  author={Feng, Yan and Wu, Baoyuan and Fan, Yanbo and Liu, Li and Li, Zhifeng and Xia, Shu-Tao},  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},  pages={15095--15104},  year={2022}}",
+        "isDownloaded": false
+    },
+    "115": {
+        "title": "Protecting against image translation deepfakes by leaking universal perturbations from black-box neural networks",
+        "bibtex": "@article{ruiz2020protecting,  title={Protecting against image translation deepfakes by leaking universal perturbations from black-box neural networks},  author={Ruiz, Nataniel and Bargal, Sarah Adel and Sclaroff, Stan},  journal={arXiv preprint arXiv:2006.06493},  year={2020}}",
+        "isDownloaded": false
+    },
+    "116": {
+        "title": "Data-free universal adversarial perturbation and black-box attack",
+        "bibtex": "@inproceedings{zhang2021data,  title={Data-free universal adversarial perturbation and black-box attack},  author={Zhang, Chaoning and Benz, Philipp and Karjauv, Adil and Kweon, In So},  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},  pages={7868--7877},  year={2021}}",
+        "isDownloaded": false
+    },
+    "117": {
+        "title": "Procedural noise adversarial examples for black-box attacks on deep convolutional networks",
+        "bibtex": "@inproceedings{co2019procedural,  title={Procedural noise adversarial examples for black-box attacks on deep convolutional networks},  author={Co, Kenneth T and Mu{\\~n}oz-Gonz{\\'a}lez, Luis and de Maupeou, Sixte and Lupu, Emil C},  booktitle={Proceedings of the 2019 ACM SIGSAC conference on computer and communications security},  pages={275--289},  year={2019}}",
+        "isDownloaded": false
+    },
+    "118": {
+        "title": "Boosting transferability of targeted adversarial examples via hierarchical generative networks",
+        "bibtex": "@inproceedings{yang2022boosting,  title={Boosting transferability of targeted adversarial examples via hierarchical generative networks},  author={Yang, Xiao and Dong, Yinpeng and Pang, Tianyu and Su, Hang and Zhu, Jun},  booktitle={European Conference on Computer Vision},  pages={725--742},  year={2022},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "119": {
+        "title": "Boosting adversarial transferability by block shuffle and rotation",
+        "bibtex": "@inproceedings{wang2024boosting,  title={Boosting adversarial transferability by block shuffle and rotation},  author={Wang, Kunyu and He, Xuanran and Wang, Wenxuan and Wang, Xiaosen},  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},  pages={24336--24346},  year={2024}}",
+        "isDownloaded": false
+    },
+    "120": {
+        "title": "Explainable and Transferable Adversarial Attack for ML-Based Network Intrusion Detectors",
+        "bibtex": "@article{zhang2024explainable,  title={Explainable and Transferable Adversarial Attack for ML-Based Network Intrusion Detectors},  author={Zhang, Hangsheng and Han, Dongqi and Liu, Yinlong and Wang, Zhiliang and Sun, Jiyan and Zhuang, Shangyuan and Liu, Jiqiang and Dong, Jinsong},  journal={arXiv preprint arXiv:2401.10691},  year={2024}}",
+        "isDownloaded": false
+    },
+    "121": {
+        "title": "Model evasion attack on intrusion detection systems using adversarial machine learning",
+        "bibtex": "@inproceedings{ayub2020model,  title={Model evasion attack on intrusion detection systems using adversarial machine learning},  author={Ayub, Md Ahsan and Johnson, William A and Talbert, Douglas A and Siraj, Ambareen},  booktitle={2020 54th annual conference on information sciences and systems (CISS)},  pages={1--6},  year={2020},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "122": {
+        "title": "Adversarial machine learning in malware detection: Arms race between evasion attack and defense",
+        "bibtex": "@inproceedings{chen2017adversarial,  title={Adversarial machine learning in malware detection: Arms race between evasion attack and defense},  author={Chen, Lingwei and Ye, Yanfang and Bourlai, Thirimachos},  booktitle={2017 European intelligence and security informatics conference (EISIC)},  pages={99--106},  year={2017},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "123": {
+        "title": "Defending network intrusion detection systems against adversarial evasion attacks",
+        "bibtex": "@article{pawlicki2020defending,  title={Defending network intrusion detection systems against adversarial evasion attacks},  author={Pawlicki, Marek and Chora{\\'s}, Micha{\\l} and Kozik, Rafa{\\l}},  journal={Future Generation Computer Systems},  volume={110},  pages={148--154},  year={2020},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "124": {
+        "title": "Evaluating adversarial evasion attacks in the context of wireless communications",
+        "bibtex": "@article{flowers2019evaluating,  title={Evaluating adversarial evasion attacks in the context of wireless communications},  author={Flowers, Bryse and Buehrer, R Michael and Headley, William C},  journal={IEEE Transactions on Information Forensics and Security},  volume={15},  pages={1102--1113},  year={2019},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "125": {
+        "title": "Omni: Automated ensemble with unexpected models against adversarial evasion attack",
+        "bibtex": "@article{shu2022omni,  title={Omni: Automated ensemble with unexpected models against adversarial evasion attack},  author={Shu, Rui and Xia, Tianpei and Williams, Laurie and Menzies, Tim},  journal={Empirical Software Engineering},  volume={27},  pages={1--32},  year={2022},  publisher={Springer}}",
+        "isDownloaded": false
+    },
+    "126": {
+        "title": "Advanced evasion attacks and mitigations on practical ML\u2010based phishing website classifiers",
+        "bibtex": "@article{song2021advanced,  title={Advanced evasion attacks and mitigations on practical ML-based phishing website classifiers},  author={Song, Fu and Lei, Yusi and Chen, Sen and Fan, Lingling and Liu, Yang},  journal={International Journal of Intelligent Systems},  volume={36},  number={9},  pages={5210--5240},  year={2021},  publisher={Wiley Online Library}}",
+        "isDownloaded": false
+    },
+    "127": {
+        "title": "Evadedroid: A practical evasion attack on machine learning for black-box android malware detection",
+        "bibtex": "@article{bostani2024evadedroid,  title={Evadedroid: A practical evasion attack on machine learning for black-box android malware detection},  author={Bostani, Hamid and Moonsamy, Veelasha},  journal={Computers \\& Security},  volume={139},  pages={103676},  year={2024},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "128": {
+        "title": "Evaluating resilience of encrypted traffic classification against adversarial evasion attacks",
+        "bibtex": "@inproceedings{maarouf2021evaluating,  title={Evaluating resilience of encrypted traffic classification against adversarial evasion attacks},  author={Maarouf, Ramy and Sattar, Danish and Matrawy, Ashraf},  booktitle={2021 IEEE Symposium on Computers and Communications (ISCC)},  pages={1--6},  year={2021},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "129": {
+        "title": "Efficient, direct, and restricted black-box graph evasion attacks to any-layer graph neural networks via influence function",
+        "bibtex": "@inproceedings{wang2024efficient,  title={Efficient, direct, and restricted black-box graph evasion attacks to any-layer graph neural networks via influence function},  author={Wang, Binghui and Lin, Minhua and Zhou, Tianxiang and Zhou, Pan and Li, Ang and Pang, Meng and Li, Hai and Chen, Yiran},  booktitle={Proceedings of the 17th ACM International Conference on Web Search and Data Mining},  pages={693--701},  year={2024}}",
+        "isDownloaded": false
+    },
+    "130": {
+        "title": "Di-aa: An interpretable white-box attack for fooling deep neural networks",
+        "bibtex": "@article{wang2022di,  title={Di-aa: An interpretable white-box attack for fooling deep neural networks},  author={Wang, Yixiang and Liu, Jiqiang and Chang, Xiaolin and Rodr{\\'\\i}guez, Ricardo J and Wang, Jianhua},  journal={Information Sciences},  volume={610},  pages={14--32},  year={2022},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "131": {
+        "title": "Black-Box Evasion Attack Method Based on Confidence Score of Benign Samples",
+        "bibtex": "@article{wu2023black,  title={Black-Box Evasion Attack Method Based on Confidence Score of Benign Samples},  author={Wu, Shaohan and Xue, Jingfeng and Wang, Yong and Kong, Zixiao},  journal={Electronics},  volume={12},  number={11},  pages={2346},  year={2023},  publisher={MDPI}}",
+        "isDownloaded": false
+    },
+    "132": {
+        "title": "MaskDGA: A black-box evasion technique against DGA classifiers and adversarial defenses",
+        "bibtex": "@article{sidi2019maskdga,  title={MaskDGA: A black-box evasion technique against DGA classifiers and adversarial defenses},  author={Sidi, Lior and Nadler, Asaf and Shabtai, Asaf},  journal={arXiv preprint arXiv:1902.08909},  year={2019}}",
+        "isDownloaded": false
+    },
+    "133": {
+        "title": "Black-box adversarial attacks with limited queries and information",
+        "bibtex": "@inproceedings{ilyas2018black,  title={Black-box adversarial attacks with limited queries and information},  author={Ilyas, Andrew and Engstrom, Logan and Athalye, Anish and Lin, Jessy},  booktitle={International conference on machine learning},  pages={2137--2146},  year={2018},  organization={PMLR}}",
+        "isDownloaded": false
+    },
+    "134": {
+        "title": "Decision-based adversarial attacks: Reliable attacks against black-box machine learning models",
+        "bibtex": "@article{brendel2017decision,  title={Decision-based adversarial attacks: Reliable attacks against black-box machine learning models},  author={Brendel, Wieland and Rauber, Jonas and Bethge, Matthias},  journal={arXiv preprint arXiv:1712.04248},  year={2017}}",
+        "isDownloaded": false
+    },
+    "135": {
+        "title": "Stateful detection of black-box adversarial attacks",
+        "bibtex": "@inproceedings{chen2020stateful,  title={Stateful detection of black-box adversarial attacks},  author={Chen, Steven and Carlini, Nicholas and Wagner, David},  booktitle={Proceedings of the 1st ACM Workshop on Security and Privacy on Artificial Intelligence},  pages={30--39},  year={2020}}",
+        "isDownloaded": false
+    },
+    "136": {
+        "title": "Explanation-guided diagnosis of machine learning evasion attacks",
+        "bibtex": "@inproceedings{amich2021explanation,  title={Explanation-guided diagnosis of machine learning evasion attacks},  author={Amich, Abderrahmen and Eshete, Birhanu},  booktitle={Security and Privacy in Communication Networks: 17th EAI International Conference, SecureComm 2021, Virtual Event, September 6--9, 2021, Proceedings, Part I 17},  pages={207--228},  year={2021},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "137": {
+        "title": "Quantifying the impact of adversarial evasion attacks on machine learning based android malware classifiers",
+        "bibtex": "@inproceedings{abaid2017quantifying,  title={Quantifying the impact of adversarial evasion attacks on machine learning based android malware classifiers},  author={Abaid, Zainab and Kaafar, Mohamed Ali and Jha, Sanjay},  booktitle={2017 IEEE 16th international symposium on network computing and applications (NCA)},  pages={1--10},  year={2017},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "138": {
+        "title": "Are self-driving cars secure? evasion attacks against deep neural networks for steering angle prediction",
+        "bibtex": "@inproceedings{chernikova2019self,  title={Are self-driving cars secure? evasion attacks against deep neural networks for steering angle prediction},  author={Chernikova, Alesia and Oprea, Alina and Nita-Rotaru, Cristina and Kim, BaekGyu},  booktitle={2019 IEEE Security and Privacy Workshops (SPW)},  pages={132--137},  year={2019},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "139": {
+        "title": "Using randomness to improve robustness of tree-based models against evasion attacks",
+        "bibtex": "@inproceedings{yang2019using,  title={Using randomness to improve robustness of tree-based models against evasion attacks},  author={Yang, Fan and Chen, Zhiyuan and Gangopadhyay, Aryya},  booktitle={Proceedings of the ACM International Workshop on Security and Privacy Analytics},  pages={25--35},  year={2019}}",
+        "isDownloaded": false
+    },
+    "140": {
+        "title": "A sensitivity analysis of poisoning and evasion attacks in network intrusion detection system machine learning models",
+        "bibtex": "@inproceedings{talty2021sensitivity,  title={A sensitivity analysis of poisoning and evasion attacks in network intrusion detection system machine learning models},  author={Talty, Kevin and Stockdale, John and Bastian, Nathaniel D},  booktitle={MILCOM 2021-2021 IEEE Military Communications Conference (MILCOM)},  pages={1011--1016},  year={2021},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "141": {
+        "title": "Data poisoning attacks on regression learning and corresponding defenses",
+        "bibtex": "@inproceedings{muller2020data,  title={Data poisoning attacks on regression learning and corresponding defenses},  author={M{\\\"u}ller, Nicolas and Kowatsch, Daniel and B{\\\"o}ttinger, Konstantin},  booktitle={2020 IEEE 25th Pacific Rim International Symposium on Dependable Computing (PRDC)},  pages={80--89},  year={2020},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "142": {
+        "title": "SpacePhish: the evasion-space of adversarial attacks against phishing website detectors using machine learning",
+        "bibtex": "@inproceedings{apruzzese2022spacephish,  title={SpacePhish: the evasion-space of adversarial attacks against phishing website detectors using machine learning},  author={Apruzzese, Giovanni and Conti, Mauro and Yuan, Ying},  booktitle={Proceedings of the 38th Annual Computer Security Applications Conference},  pages={171--185},  year={2022}}",
+        "isDownloaded": false
+    },
+    "143": {
+        "title": "Black box attack and network intrusion detection using machine learning for malicious traffic",
+        "bibtex": "@article{zhu2022black,  title={Black box attack and network intrusion detection using machine learning for malicious traffic},  author={Zhu, Yiran and Cui, Lei and Ding, Zhenquan and Li, Lun and Liu, Yongji and Hao, Zhiyu},  journal={Computers \\& Security},  volume={123},  pages={102922},  year={2022},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "144": {
+        "title": "Stealthy black-box attacks on deep learning non-intrusive load monitoring models",
+        "bibtex": "@article{wang2021stealthy,  title={Stealthy black-box attacks on deep learning non-intrusive load monitoring models},  author={Wang, Junfei and Srikantha, Pirathayini},  journal={IEEE Transactions on Smart Grid},  volume={12},  number={4},  pages={3479--3492},  year={2021},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "145": {
+        "title": "Defending deep learning based anomaly detection systems against white-box adversarial examples and backdoor attacks",
+        "bibtex": "@inproceedings{alrawashdeh2020defending,  title={Defending deep learning based anomaly detection systems against white-box adversarial examples and backdoor attacks},  author={Alrawashdeh, Khaled and Goldsmith, Stephen},  booktitle={2020 IEEE International Symposium on Technology and Society (ISTAS)},  pages={294--301},  year={2020},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "146": {
+        "title": "Min-max optimization without gradients: Convergence and applications to black-box evasion and poisoning attacks",
+        "bibtex": "@inproceedings{liu2020min,  title={Min-max optimization without gradients: Convergence and applications to black-box evasion and poisoning attacks},  author={Liu, Sijia and Lu, Songtao and Chen, Xiangyi and Feng, Yao and Xu, Kaidi and Al-Dujaili, Abdullah and Hong, Mingyi and O\u2019Reilly, Una-May},  booktitle={International conference on machine learning},  pages={6282--6293},  year={2020},  organization={PMLR}}",
+        "isDownloaded": false
+    },
+    "147": {
+        "title": "A black-box adversarial attack on demand side management",
+        "bibtex": "@article{cramer2024black,  title={A black-box adversarial attack on demand side management},  author={Cramer, Eike and Gao, Ji},  journal={Computers \\& Chemical Engineering},  volume={186},  pages={108681},  year={2024},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "148": {
+        "title": "Manipulating machine learning: Poisoning attacks and countermeasures for regression learning",
+        "bibtex": "@inproceedings{jagielski2018manipulating,  title={Manipulating machine learning: Poisoning attacks and countermeasures for regression learning},  author={Jagielski, Matthew and Oprea, Alina and Biggio, Battista and Liu, Chang and Nita-Rotaru, Cristina and Li, Bo},  booktitle={2018 IEEE symposium on security and privacy (SP)},  pages={19--35},  year={2018},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "149": {
+        "title": "Query-efficient black-box attack against sequence-based malware classifiers",
+        "bibtex": "@inproceedings{rosenberg2020query,  title={Query-efficient black-box attack against sequence-based malware classifiers},  author={Rosenberg, Ishai and Shabtai, Asaf and Elovici, Yuval and Rokach, Lior},  booktitle={Proceedings of the 36th Annual Computer Security Applications Conference},  pages={611--626},  year={2020}}",
+        "isDownloaded": false
+    },
+    "150": {
+        "title": "Prior convictions: Black-box adversarial attacks with bandits and priors",
+        "bibtex": "@article{ilyas2018prior,  title={Prior convictions: Black-box adversarial attacks with bandits and priors},  author={Ilyas, Andrew and Engstrom, Logan and Madry, Aleksander},  journal={arXiv preprint arXiv:1807.07978},  year={2018}}",
+        "isDownloaded": false
+    },
+    "151": {
+        "title": "An adversarial machine learning model against android malware evasion attacks",
+        "bibtex": "@inproceedings{chen2017adversarial,  title={An adversarial machine learning model against android malware evasion attacks},  author={Chen, Lingwei and Hou, Shifu and Ye, Yanfang and Chen, Lifei},  booktitle={Web and Big Data: APWeb-WAIM 2017 International Workshops: MWDA, HotSpatial, GDMA, DDC, SDMA, MASS, Beijing, China, July 7-9, 2017, Revised Selected Papers 1},  pages={43--55},  year={2017},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "152": {
+        "title": "Deep reinforcement adversarial learning against botnet evasion attacks",
+        "bibtex": "@article{apruzzese2020deep,  title={Deep reinforcement adversarial learning against botnet evasion attacks},  author={Apruzzese, Giovanni and Andreolini, Mauro and Marchetti, Mirco and Venturi, Andrea and Colajanni, Michele},  journal={IEEE Transactions on Network and Service Management},  volume={17},  number={4},  pages={1975--1987},  year={2020},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "153": {
+        "title": "AppCon: Mitigating evasion attacks to ML cyber detectors",
+        "bibtex": "@article{apruzzese2020appcon,  title={AppCon: Mitigating evasion attacks to ML cyber detectors},  author={Apruzzese, Giovanni and Andreolini, Mauro and Marchetti, Mirco and Colacino, Vincenzo Giuseppe and Russo, Giacomo},  journal={Symmetry},  volume={12},  number={4},  pages={653},  year={2020},  publisher={MDPI}}",
+        "isDownloaded": false
+    },
+    "154": {
+        "title": "On the limitations of targeted adversarial evasion attacks against deep learning enabled modulation recognition",
+        "bibtex": "@inproceedings{bair2019limitations,  title={On the limitations of targeted adversarial evasion attacks against deep learning enabled modulation recognition},  author={Bair, Samuel and DelVecchio, Matthew and Flowers, Bryse and Michaels, Alan J and Headley, William C},  booktitle={Proceedings of the ACM Workshop on Wireless Security and Machine Learning},  pages={25--30},  year={2019}}",
+        "isDownloaded": false
+    },
+    "155": {
+        "title": "Evading machine learning botnet detection models via deep reinforcement learning",
+        "bibtex": "@inproceedings{wu2019evading,  title={Evading machine learning botnet detection models via deep reinforcement learning},  author={Wu, Di and Fang, Binxing and Wang, Junnan and Liu, Qixu and Cui, Xiang},  booktitle={ICC 2019-2019 IEEE International Conference on Communications (ICC)},  pages={1--6},  year={2019},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "156": {
+        "title": "Untargeted white-box adversarial attack with heuristic defence methods in real-time deep learning based network intrusion detection system",
+        "bibtex": "@article{roshan2024untargeted,  title={Untargeted white-box adversarial attack with heuristic defence methods in real-time deep learning based network intrusion detection system},  author={Roshan, Khushnaseeb and Zafar, Aasim and Haque, Shiekh Burhan Ul},  journal={Computer Communications},  volume={218},  pages={97--113},  year={2024},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "157": {
+        "title": "Boosting robustness of network intrusion detection systems: A novel two phase defense strategy against untargeted white-box optimization adversarial attack",
+        "bibtex": "@article{roshan2024boosting,  title={Boosting robustness of network intrusion detection systems: A novel two phase defense strategy against untargeted white-box optimization adversarial attack},  author={Roshan, Ms Khushnaseeb and Zafar, Aasim},  journal={Expert Systems with Applications},  pages={123567},  year={2024},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "158": {
+        "title": "Evasive attacks against autoencoder-based cyberattack detection systems in power systems",
+        "bibtex": "@article{khaw2024evasive,  title={Evasive attacks against autoencoder-based cyberattack detection systems in power systems},  author={Khaw, Yew Meng and Jahromi, Amir Abiri and Arani, Mohammadreza FM and Kundur, Deepa},  journal={Energy and AI},  pages={100381},  year={2024},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "159": {
+        "title": "Unsupervised algorithms to detect zero-day attacks: Strategy and application",
+        "bibtex": "@article{zoppi2021unsupervised,  title={Unsupervised algorithms to detect zero-day attacks: Strategy and application},  author={Zoppi, Tommaso and Ceccarelli, Andrea and Bondavalli, Andrea},  journal={Ieee Access},  volume={9},  pages={90603--90615},  year={2021},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "160": {
+        "title": "Practical traffic-space adversarial attacks on learning-based nidss",
+        "bibtex": "@article{han2020practical,  title={Practical traffic-space adversarial attacks on learning-based nidss},  author={Han, Dongqi and Wang, Zhiliang and Zhong, Ying and Chen, Wenqi and Yang, Jiahai and Lu, Shuqiang and Shi, Xingang and Yin, Xia},  journal={arXiv preprint arXiv:2005.07519},  year={2020},  publisher={CoRR}}",
+        "isDownloaded": false
+    },
+    "161": {
+        "title": "Black-box dissector: Towards erasing-based hard-label model stealing attack",
+        "bibtex": "@inproceedings{wang2022black,  title={Black-box dissector: Towards erasing-based hard-label model stealing attack},  author={Wang, Yixu and Li, Jie and Liu, Hong and Wang, Yan and Wu, Yongjian and Huang, Feiyue and Ji, Rongrong},  booktitle={European conference on computer vision},  pages={192--208},  year={2022},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "162": {
+        "title": "Towards lightweight black-box attack against deep neural networks",
+        "bibtex": "@article{sun2022towards,  title={Towards lightweight black-box attack against deep neural networks},  author={Sun, Chenghao and Zhang, Yonggang and Chaoqun, Wan and Wang, Qizhou and Li, Ya and Liu, Tongliang and Han, Bo and Tian, Xinmei},  journal={Advances in Neural Information Processing Systems},  volume={35},  pages={19319--19331},  year={2022}}",
+        "isDownloaded": false
+    },
+    "163": {
+        "title": "Single-shot black-box adversarial attacks against malware detectors: A causal language model approach",
+        "bibtex": "@inproceedings{hu2021single,  title={Single-shot black-box adversarial attacks against malware detectors: A causal language model approach},  author={Hu, James Lee and Ebrahimi, Mohammadreza and Chen, Hsinchun},  booktitle={2021 IEEE International Conference on Intelligence and Security Informatics (ISI)},  pages={1--6},  year={2021},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "164": {
+        "title": "Black-box attack-based security evaluation framework for credit card fraud detection models",
+        "bibtex": "@article{xiao2023black,  title={Black-box attack-based security evaluation framework for credit card fraud detection models},  author={Xiao, Jin and Tian, Yuhang and Jia, Yanlin and Jiang, Xiaoyi and Yu, Lean and Wang, Shouyang},  journal={INFORMS Journal on Computing},  volume={35},  number={5},  pages={986--1001},  year={2023},  publisher={INFORMS}}",
+        "isDownloaded": false
+    },
+    "165": {
+        "title": "Prada: Practical black-box adversarial attacks against neural ranking models",
+        "bibtex": "@article{wu2023prada,  title={Prada: Practical black-box adversarial attacks against neural ranking models},  author={Wu, Chen and Zhang, Ruqing and Guo, Jiafeng and De Rijke, Maarten and Fan, Yixing and Cheng, Xueqi},  journal={ACM Transactions on Information Systems},  volume={41},  number={4},  pages={1--27},  year={2023},  publisher={ACM New York, NY}}",
+        "isDownloaded": false
+    },
+    "166": {
+        "title": "Grey-box extraction of natural language models",
+        "bibtex": "@inproceedings{zanella2021grey,  title={Grey-box extraction of natural language models},  author={Zanella-Beguelin, Santiago and Tople, Shruti and Paverd, Andrew and K{\\\"o}pf, Boris},  booktitle={International Conference on Machine Learning},  pages={12278--12286},  year={2021},  organization={PMLR}}",
+        "isDownloaded": false
+    },
+    "167": {
+        "title": "Addressing adversarial attacks against security systems based on machine learning",
+        "bibtex": "@inproceedings{apruzzese2019addressing,  title={Addressing adversarial attacks against security systems based on machine learning},  author={Apruzzese, Giovanni and Colajanni, Michele and Ferretti, Luca and Marchetti, Mirco},  booktitle={2019 11th international conference on cyber conflict (CyCon)},  volume={900},  pages={1--18},  year={2019},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "168": {
+        "title": "Evading a machine learning-based intrusion detection system through adversarial perturbations",
+        "bibtex": "@inproceedings{fladby2020evading,  title={Evading a machine learning-based intrusion detection system through adversarial perturbations},  author={Fladby, Torgeir and Haugerud, H{\\aa}rek and Nichele, Stefano and Begnum, Kyrre and Yazidi, Anis},  booktitle={Proceedings of the International Conference on Research in Adaptive and Convergent Systems},  pages={161--166},  year={2020}}",
+        "isDownloaded": false
+    },
+    "169": {
+        "title": "ShadowDroid: practical black-box attack against ML-based android malware detection",
+        "bibtex": "@inproceedings{zhang2021shadowdroid,  title={ShadowDroid: practical black-box attack against ML-based android malware detection},  author={Zhang, Jin and Zhang, Chennan and Liu, Xiangyu and Wang, Yuncheng and Diao, Wenrui and Guo, Shanqing},  booktitle={2021 IEEE 27th International Conference on Parallel and Distributed Systems (ICPADS)},  pages={629--636},  year={2021},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "170": {
+        "title": "Secured cluster-based electricity theft detectors against blackbox evasion attacks",
+        "bibtex": "@inproceedings{elgarhy2024secured,  title={Secured cluster-based electricity theft detectors against blackbox evasion attacks},  author={Elgarhy, Islam and El-Toukhy, Ahmed T and Badr, Mahmoud M and Mahmoud, Mohamed and Fouda, Mostafa M and Alsabaan, Maazen and Kholidy, Hisham A},  booktitle={2024 IEEE 21st Consumer Communications \\& Networking Conference (CCNC)},  pages={333--338},  year={2024},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "171": {
+        "title": "Evaluating and improving adversarial robustness of machine learning-based network intrusion detectors",
+        "bibtex": "@article{han2021evaluating,  title={Evaluating and improving adversarial robustness of machine learning-based network intrusion detectors},  author={Han, Dongqi and Wang, Zhiliang and Zhong, Ying and Chen, Wenqi and Yang, Jiahai and Lu, Shuqiang and Shi, Xingang and Yin, Xia},  journal={IEEE Journal on Selected Areas in Communications},  volume={39},  number={8},  pages={2632--2647},  year={2021},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "172": {
+        "title": "Evasion Attacks and Defense Mechanisms for Machine Learning Based Web Phishing Classifiers",
+        "bibtex": "@article{pillai2023evasion,  title={Evasion Attacks and Defense Mechanisms for Machine Learning Based Web Phishing Classifiers},  author={Pillai, Manu J and Remya, S and Devika, V and Ramasubbareddys, Somula and Cho, Yongyun},  journal={IEEE Access},  year={2023},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "173": {
+        "title": "Real-time evasion attacks with physical constraints on deep learning-based anomaly detectors in industrial control systems",
+        "bibtex": "@article{erba2019real,  title={Real-time evasion attacks with physical constraints on deep learning-based anomaly detectors in industrial control systems},  author={Erba, Alessandro and Taormina, Riccardo and Galelli, Stefano and Pogliani, Marcello and Carminati, Michele and Zanero, Stefano and Tippenhauer, Nils Ole},  journal={arXiv preprint arXiv:1907.07487},  year={2019}}",
+        "isDownloaded": false
+    },
+    "174": {
+        "title": "EvadeRL: Evading PDF malware classifiers with deep reinforcement learning",
+        "bibtex": "@article{mao2022evaderl,  title={EvadeRL: Evading PDF malware classifiers with deep reinforcement learning},  author={Mao, Zhengyang and Fang, Zhiyang and Li, Meijin and Fan, Yang},  journal={Security and Communication Networks},  volume={2022},  number={1},  pages={7218800},  year={2022},  publisher={Wiley Online Library}}",
+        "isDownloaded": false
+    },
+    "175": {
+        "title": "Adversarial machine learning attacks and defense methods in the cyber security domain",
+        "bibtex": "@article{rosenberg2021adversarial,  title={Adversarial machine learning attacks and defense methods in the cyber security domain},  author={Rosenberg, Ishai and Shabtai, Asaf and Elovici, Yuval and Rokach, Lior},  journal={ACM Computing Surveys (CSUR)},  volume={54},  number={5},  pages={1--36},  year={2021},  publisher={ACM New York, NY, USA}}",
+        "isDownloaded": false
+    },
+    "176": {
+        "title": "Evasion attack steganography: Turning vulnerability of machine learning to adversarial attacks into a real-world application",
+        "bibtex": "@inproceedings{ghamizi2021evasion,  title={Evasion attack steganography: Turning vulnerability of machine learning to adversarial attacks into a real-world application},  author={Ghamizi, Salah and Cordy, Maxime and Papadakis, Mike and Le Traon, Yves},  booktitle={Proceedings of the IEEE/CVF International conference on computer vision},  pages={31--40},  year={2021}}",
+        "isDownloaded": false
+    },
+    "177": {
+        "title": "Adversarial machine learning: Attacks from laboratories to the real world",
+        "bibtex": "@article{lin2021adversarial,  title={Adversarial machine learning: Attacks from laboratories to the real world},  author={Lin, Hsiao-Ying and Biggio, Battista},  journal={Computer},  volume={54},  number={5},  pages={56--60},  year={2021},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "178": {
+        "title": "Poisoning and evasion attacks against deep learning algorithms in autonomous vehicles",
+        "bibtex": "@article{jiang2020poisoning,  title={Poisoning and evasion attacks against deep learning algorithms in autonomous vehicles},  author={Jiang, Wenbo and Li, Hongwei and Liu, Sen and Luo, Xizhao and Lu, Rongxing},  journal={IEEE transactions on vehicular technology},  volume={69},  number={4},  pages={4439--4449},  year={2020},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "179": {
+        "title": "Learning to evade static pe machine learning malware models via reinforcement learning",
+        "bibtex": "@article{anderson2018learning,  title={Learning to evade static pe machine learning malware models via reinforcement learning},  author={Anderson, Hyrum S and Kharkar, Anant and Filar, Bobby and Evans, David and Roth, Phil},  journal={arXiv preprint arXiv:1801.08917},  year={2018}}",
+        "isDownloaded": false
+    },
+    "180": {
+        "title": "Have you stolen my model? evasion attacks against deep neural network watermarking techniques",
+        "bibtex": "@article{hitaj2018have,  title={Have you stolen my model? evasion attacks against deep neural network watermarking techniques},  author={Hitaj, Dorjan and Mancini, Luigi V},  journal={arXiv preprint arXiv:1809.00615},  year={2018}}",
+        "isDownloaded": false
+    },
+    "181": {
+        "title": "Evading machine learning malware detection",
+        "bibtex": "@article{anderson2017evading,  title={Evading machine learning malware detection},  author={Anderson, Hyrum S and Kharkar, Anant and Filar, Bobby and Roth, Phil},  journal={black Hat},  volume={2017},  pages={1--6},  year={2017}}",
+        "isDownloaded": false
+    },
+    "182": {
+        "title": "Android ransomware detection using machine learning techniques to mitigate adversarial evasion attacks",
+        "bibtex": "@article{ameer2019android,  title={Android ransomware detection using machine learning techniques to mitigate adversarial evasion attacks},  author={Ameer, Madiha},  journal={Capital University of Science and Technology, Islamabad, Pakistan},  year={2019}}",
+        "isDownloaded": false
+    },
+    "183": {
+        "title": "Adversarial machine learning",
+        "bibtex": "@inproceedings{huang2011adversarial,  title={Adversarial machine learning},  author={Huang, Ling and Joseph, Anthony D and Nelson, Blaine and Rubinstein, Benjamin IP and Tygar, J Doug},  booktitle={Proceedings of the 4th ACM workshop on Security and artificial intelligence},  pages={43--58},  year={2011}}",
+        "isDownloaded": false
+    },
+    "184": {
+        "title": "Comparison of several machine learning techniques in pursuit-evasion games",
+        "bibtex": "@inproceedings{baltes2002comparison,  title={Comparison of several machine learning techniques in pursuit-evasion games},  author={Baltes, Jacky and Park, Yongjoo},  booktitle={RoboCup 2001: Robot Soccer World Cup V 5},  pages={269--274},  year={2002},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "185": {
+        "title": "Identifying tax evasion in Mexico with tools from network science and machine learning",
+        "bibtex": "@article{zumaya2021identifying,  title={Identifying tax evasion in Mexico with tools from network science and machine learning},  author={Zumaya, Martin and Guerrero, Rita and Islas, Eduardo and Pineda, Omar and Gershenson, Carlos and I{\\~n}iguez, Gerardo and Pineda, Carlos},  journal={Corruption Networks: Concepts and Applications},  pages={89--113},  year={2021},  publisher={Springer}}",
+        "isDownloaded": false
+    },
+    "186": {
+        "title": "Venomave: Targeted poisoning against speech recognition",
+        "bibtex": "@inproceedings{aghakhani2023venomave,  title={Venomave: Targeted poisoning against speech recognition},  author={Aghakhani, Hojjat and Sch{\\\"o}nherr, Lea and Eisenhofer, Thorsten and Kolossa, Dorothea and Holz, Thorsten and Kruegel, Christopher and Vigna, Giovanni},  booktitle={2023 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)},  pages={404--417},  year={2023},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "187": {
+        "title": "Defending adversarial attacks on cloud-aided automatic speech recognition systems",
+        "bibtex": "Error 403 (Forbidden)!!1403. That\u2019s an error.Your client does not have permission to get URL /scholar.bib?q=info:mfzXCrZCa2gJ:scholar.google.com/&output=citation&scisdr=ClFpVAUUGAA:AFWwaeYAAAAAZngsSetq7iaQd8ScDqH4_4lxxNc&scisig=AFWwaeYAAAAAZngsSU3Fa44oIVs_vQBFvIuXpbc&scisf=4&ct=citation&cd=-1&hl=de from this server. (Client IP address: 94.69.49.105) Please see Google's Terms of Service posted at https://policies.google.com/terms That\u2019s all we know.",
+        "isDownloaded": false
+    },
+    "188": {
+        "title": "Evasion and obfuscation in speaker recognition surveillance and forensics",
+        "bibtex": "@inproceedings{alegre2014evasion,  title={Evasion and obfuscation in speaker recognition surveillance and forensics},  author={Alegre, Federico and Soldi, Giovanni and Evans, Nicholas and Fauve, Benoit and Liu, Jasmin},  booktitle={2nd International Workshop on Biometrics and Forensics},  pages={1--6},  year={2014},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "189": {
+        "title": "Speech pattern based black-box model watermarking for automatic speech recognition",
+        "bibtex": "@inproceedings{chen2022speech,  title={Speech pattern based black-box model watermarking for automatic speech recognition},  author={Chen, Haozhe and Zhang, Weiming and Liu, Kunlin and Chen, Kejiang and Fang, Han and Yu, Nenghai},  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},  pages={3059--3063},  year={2022},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "190": {
+        "title": "Adversarial black-box attacks on automatic speech recognition systems using multi-objective evolutionary optimization",
+        "bibtex": "@article{khare2018adversarial,  title={Adversarial black-box attacks on automatic speech recognition systems using multi-objective evolutionary optimization},  author={Khare, Shreya and Aralikatte, Rahul and Mani, Senthil},  journal={arXiv preprint arXiv:1811.01312},  year={2018}}",
+        "isDownloaded": false
+    },
+    "191": {
+        "title": "Investigating the practicality of adversarial evasion attacks on network intrusion detection",
+        "bibtex": "@article{merzouk2022investigating,  title={Investigating the practicality of adversarial evasion attacks on network intrusion detection},  author={Merzouk, Mohamed Amine and Cuppens, Fr{\\'e}d{\\'e}ric and Boulahia-Cuppens, Nora and Yaich, Reda},  journal={Annals of Telecommunications},  volume={77},  number={11},  pages={763--775},  year={2022},  publisher={Springer}}",
+        "isDownloaded": false
+    },
+    "192": {
+        "title": "Evasion and causative attacks with adversarial deep learning",
+        "bibtex": "@inproceedings{shi2017evasion,  title={Evasion and causative attacks with adversarial deep learning},  author={Shi, Yi and Sagduyu, Yalin E},  booktitle={MILCOM 2017-2017 IEEE Military Communications Conference (MILCOM)},  pages={243--248},  year={2017},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "193": {
+        "title": "Adversarial XAI methods in cybersecurity",
+        "bibtex": "@article{kuppa2021adversarial,  title={Adversarial XAI methods in cybersecurity},  author={Kuppa, Aditya and Le-Khac, Nhien-An},  journal={IEEE transactions on information forensics and security},  volume={16},  pages={4924--4938},  year={2021},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "194": {
+        "title": "Evasion is not enough: A case study of android malware",
+        "bibtex": "@inproceedings{berger2020evasion,  title={Evasion is not enough: A case study of android malware},  author={Berger, Harel and Hajaj, Chen and Dvir, Amit},  booktitle={International Symposium on Cyber Security Cryptography and Machine Learning},  pages={167--174},  year={2020},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "195": {
+        "title": "Mitigating adversarial evasion attacks of ransomware using ensemble learning",
+        "bibtex": "@article{ahmed2022mitigating,  title={Mitigating adversarial evasion attacks of ransomware using ensemble learning},  author={Ahmed, Usman and Lin, Jerry Chun-Wei and Srivastava, Gautam},  journal={Computers and Electrical Engineering},  volume={100},  pages={107903},  year={2022},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "196": {
+        "title": "Mitigating adversarial evasion attacks by deep active learning for medical image classification",
+        "bibtex": "@article{ahmed2022mitigating,  title={Mitigating adversarial evasion attacks by deep active learning for medical image classification},  author={Ahmed, Usman and Lin, Jerry Chun-Wei and Srivastava, Gautam},  journal={Multimedia Tools and Applications},  volume={81},  number={29},  pages={41899--41910},  year={2022},  publisher={Springer}}",
+        "isDownloaded": false
+    },
+    "197": {
+        "title": "Evasion attacks against watermarking techniques found in MLaaS systems",
+        "bibtex": "@inproceedings{hitaj2019evasion,  title={Evasion attacks against watermarking techniques found in MLaaS systems},  author={Hitaj, Dorjan and Hitaj, Briland and Mancini, Luigi V},  booktitle={2019 Sixth International Conference on Software Defined Systems (SDS)},  pages={55--63},  year={2019},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "198": {
+        "title": "Spot evasion attacks: Adversarial examples for license plate recognition systems with convolutional neural networks",
+        "bibtex": "@article{qian2020spot,  title={Spot evasion attacks: Adversarial examples for license plate recognition systems with convolutional neural networks},  author={Qian, Yaguan and Ma, Danfeng and Wang, Bin and Pan, Jun and Wang, Jiamin and Gu, Zhaoquan and Chen, Jianhai and Zhou, Wujie and Lei, Jingsheng},  journal={Computers \\& Security},  volume={95},  pages={101826},  year={2020},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "199": {
+        "title": "Better the devil you know: An analysis of evasion attacks using out-of-distribution adversarial examples",
+        "bibtex": "@article{sehwag2019better,  title={Better the devil you know: An analysis of evasion attacks using out-of-distribution adversarial examples},  author={Sehwag, Vikash and Bhagoji, Arjun Nitin and Song, Liwei and Sitawarin, Chawin and Cullina, Daniel and Chiang, Mung and Mittal, Prateek},  journal={arXiv preprint arXiv:1905.01726},  year={2019}}",
+        "isDownloaded": false
+    },
+    "200": {
+        "title": "Benchmarking adversarial robustness on image classification",
+        "bibtex": "@inproceedings{dong2020benchmarking,  title={Benchmarking adversarial robustness on image classification},  author={Dong, Yinpeng and Fu, Qi-An and Yang, Xiao and Pang, Tianyu and Su, Hang and Xiao, Zihao and Zhu, Jun},  booktitle={proceedings of the IEEE/CVF conference on computer vision and pattern recognition},  pages={321--331},  year={2020}}",
+        "isDownloaded": false
+    },
+    "201": {
+        "title": "Sparse adversarial attack to object detection",
+        "bibtex": "@article{bao2020sparse,  title={Sparse adversarial attack to object detection},  author={Bao, Jiayu},  journal={arXiv preprint arXiv:2012.13692},  year={2020}}",
+        "isDownloaded": false
+    },
+    "202": {
+        "title": "Adversarial evasion noise attacks against tensorflow object detection api",
+        "bibtex": "@inproceedings{kannan2020adversarial,  title={Adversarial evasion noise attacks against tensorflow object detection api},  author={Kannan, Raadhesh and Jian, Chin Ji and Guo, XiaoNing},  booktitle={2020 15th International Conference for Internet Technology and Secured Transactions (ICITST)},  pages={1--4},  year={2020},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "203": {
+        "title": "Does physical adversarial example really matter to autonomous driving? towards system-level effect of adversarial object evasion attack",
+        "bibtex": "@inproceedings{wang2023does,  title={Does physical adversarial example really matter to autonomous driving? towards system-level effect of adversarial object evasion attack},  author={Wang, Ningfei and Luo, Yunpeng and Sato, Takami and Xu, Kaidi and Chen, Qi Alfred},  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},  pages={4412--4423},  year={2023}}",
+        "isDownloaded": false
+    },
+    "204": {
+        "title": "Zero-query transfer attacks on context-aware object detectors",
+        "bibtex": "@inproceedings{cai2022zero,  title={Zero-query transfer attacks on context-aware object detectors},  author={Cai, Zikui and Rane, Shantanu and Brito, Alejandro E and Song, Chengyu and Krishnamurthy, Srikanth V and Roy-Chowdhury, Amit K and Asif, M Salman},  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},  pages={15024--15034},  year={2022}}",
+        "isDownloaded": false
+    },
+    "205": {
+        "title": "Protecting dnn from evasion attacks using ensemble of high focal diversity",
+        "bibtex": "@article{chow2022protecting,  title={Protecting dnn from evasion attacks using ensemble of high focal diversity},  author={Chow, Ka-Ho and Liu, Ling and Lee, Myungjin and Kompella, Ramana},  year={2022}}",
+        "isDownloaded": false
+    },
+    "206": {
+        "title": "Machine learning methods for attack detection in the smart grid",
+        "bibtex": "@article{ozay2015machine,  title={Machine learning methods for attack detection in the smart grid},  author={Ozay, Mete and Esnaola, Inaki and Vural, Fatos Tunay Yarman and Kulkarni, Sanjeev R and Poor, H Vincent},  journal={IEEE transactions on neural networks and learning systems},  volume={27},  number={8},  pages={1773--1786},  year={2015},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "207": {
+        "title": "Dynamic backdoor attacks against machine learning models",
+        "bibtex": "@inproceedings{salem2022dynamic,  title={Dynamic backdoor attacks against machine learning models},  author={Salem, Ahmed and Wen, Rui and Backes, Michael and Ma, Shiqing and Zhang, Yang},  booktitle={2022 IEEE 7th European Symposium on Security and Privacy (EuroS\\&P)},  pages={703--718},  year={2022},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "208": {
+        "title": "Cyber-attack method and perpetrator prediction using machine learning algorithms",
+        "bibtex": "@article{bilen2021cyber,  title={Cyber-attack method and perpetrator prediction using machine learning algorithms},  author={Bilen, Abdulkadir and {\\\"O}zer, Ahmet Bedri},  journal={PeerJ Computer Science},  volume={7},  pages={e475},  year={2021},  publisher={PeerJ Inc.}}",
+        "isDownloaded": false
+    },
+    "209": {
+        "title": "Membership inference attacks against machine learning models",
+        "bibtex": "@inproceedings{shokri2017membership,  title={Membership inference attacks against machine learning models},  author={Shokri, Reza and Stronati, Marco and Song, Congzheng and Shmatikov, Vitaly},  booktitle={2017 IEEE symposium on security and privacy (SP)},  pages={3--18},  year={2017},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "210": {
+        "title": "Ddosnet: A deep-learning model for detecting network attacks",
+        "bibtex": "@inproceedings{elsayed2020ddosnet,  title={Ddosnet: A deep-learning model for detecting network attacks},  author={Elsayed, Mahmoud Said and Le-Khac, Nhien-An and Dev, Soumyabrata and Jurcut, Anca Delia},  booktitle={2020 IEEE 21st International Symposium on\" A World of Wireless, Mobile and Multimedia Networks\"(WoWMoM)},  pages={391--396},  year={2020},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "211": {
+        "title": "The security of machine learning",
+        "bibtex": "@article{barreno2010security,  title={The security of machine learning},  author={Barreno, Marco and Nelson, Blaine and Joseph, Anthony D and Tygar, J Doug},  journal={Machine Learning},  volume={81},  pages={121--148},  year={2010},  publisher={Springer}}",
+        "isDownloaded": false
+    },
+    "212": {
+        "title": "Vulnerability extrapolation: Assisted discovery of vulnerabilities using machine learning",
+        "bibtex": "@inproceedings{yamaguchi2011vulnerability,  title={Vulnerability extrapolation: Assisted discovery of vulnerabilities using machine learning},  author={Yamaguchi, Fabian and Rieck, Konrad and others},  booktitle={5th USENIX workshop on offensive technologies (WOOT 11)},  year={2011}}",
+        "isDownloaded": false
+    },
+    "213": {
+        "title": "Detecting android security vulnerabilities using machine learning and system calls analysis",
+        "bibtex": "@inproceedings{malik2019detecting,  title={Detecting android security vulnerabilities using machine learning and system calls analysis},  author={Malik, Yasir and Campos, Carlos Renato Salim and Jaafar, Fehmi},  booktitle={2019 IEEE 19th International Conference on Software Quality, Reliability and Security Companion (QRS-C)},  pages={109--113},  year={2019},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "214": {
+        "title": "A machine learning approach to classify security patches into vulnerability types",
+        "bibtex": "@inproceedings{wang2020machine,  title={A machine learning approach to classify security patches into vulnerability types},  author={Wang, Xinda and Wang, Shu and Sun, Kun and Batcheller, Archer and Jajodia, Sushil},  booktitle={2020 IEEE Conference on Communications and Network Security (CNS)},  pages={1--9},  year={2020},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "215": {
+        "title": "Characterizing and understanding software security vulnerabilities in machine learning libraries",
+        "bibtex": "@inproceedings{harzevili2023characterizing,  title={Characterizing and understanding software security vulnerabilities in machine learning libraries},  author={Harzevili, Nima Shiri and Shin, Jiho and Wang, Junjie and Wang, Song and Nagappan, Nachiappan},  booktitle={2023 IEEE/ACM 20th International Conference on Mining Software Repositories (MSR)},  pages={27--38},  year={2023},  organization={IEEE}}",
+        "isDownloaded": false
+    },
+    "216": {
+        "title": "Data poisoning attacks against machine learning algorithms",
+        "bibtex": "@article{yerlikaya2022data,  title={Data poisoning attacks against machine learning algorithms},  author={Yerlikaya, Fahri An{\\i}l and Bahtiyar, {\\c{S}}erif},  journal={Expert Systems with Applications},  volume={208},  pages={118101},  year={2022},  publisher={Elsevier}}",
+        "isDownloaded": false
+    },
+    "217": {
+        "title": "Data poisoning attacks on federated machine learning",
+        "bibtex": "@article{sun2021data,  title={Data poisoning attacks on federated machine learning},  author={Sun, Gan and Cong, Yang and Dong, Jiahua and Wang, Qiang and Lyu, Lingjuan and Liu, Ji},  journal={IEEE Internet of Things Journal},  volume={9},  number={13},  pages={11365--11375},  year={2021},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "218": {
+        "title": "Robustness evaluations of sustainable machine learning models against data poisoning attacks in the internet of things",
+        "bibtex": "@article{dunn2020robustness,  title={Robustness evaluations of sustainable machine learning models against data poisoning attacks in the internet of things},  author={Dunn, Corey and Moustafa, Nour and Turnbull, Benjamin},  journal={Sustainability},  volume={12},  number={16},  pages={6434},  year={2020},  publisher={MDPI}}",
+        "isDownloaded": false
+    },
+    "219": {
+        "title": "Online data poisoning attacks",
+        "bibtex": "@inproceedings{zhang2020online,  title={Online data poisoning attacks},  author={Zhang, Xuezhou and Zhu, Xiaojin and Lessard, Laurent},  booktitle={Learning for Dynamics and Control},  pages={201--210},  year={2020},  organization={PMLR}}",
+        "isDownloaded": false
+    },
+    "220": {
+        "title": "Data poisoning attacks to deep learning based recommender systems",
+        "bibtex": "@article{huang2021data,  title={Data poisoning attacks to deep learning based recommender systems},  author={Huang, Hai and Mu, Jiaming and Gong, Neil Zhenqiang and Li, Qi and Liu, Bin and Xu, Mingwei},  journal={arXiv preprint arXiv:2101.02644},  year={2021}}",
+        "isDownloaded": false
+    },
+    "221": {
+        "title": "Model extraction attacks and defenses on cloud-based machine learning models",
+        "bibtex": "@article{gong2020model,  title={Model extraction attacks and defenses on cloud-based machine learning models},  author={Gong, Xueluan and Wang, Qian and Chen, Yanjiao and Yang, Wang and Jiang, Xinchang},  journal={IEEE Communications Magazine},  volume={58},  number={12},  pages={83--89},  year={2020},  publisher={IEEE}}",
+        "isDownloaded": false
+    },
+    "222": {
+        "title": "BDPL: A boundary differentially private layer against machine learning model extraction attacks",
+        "bibtex": "@inproceedings{zheng2019bdpl,  title={BDPL: A boundary differentially private layer against machine learning model extraction attacks},  author={Zheng, Huadi and Ye, Qingqing and Hu, Haibo and Fang, Chengfang and Shi, Jie},  booktitle={Computer Security--ESORICS 2019: 24th European Symposium on Research in Computer Security, Luxembourg, September 23--27, 2019, Proceedings, Part I 24},  pages={66--83},  year={2019},  organization={Springer}}",
+        "isDownloaded": false
+    },
+    "223": {
+        "title": "Stealing machine learning models: Attacks and countermeasures for generative adversarial networks",
+        "bibtex": "@inproceedings{hu2021stealing,  title={Stealing machine learning models: Attacks and countermeasures for generative adversarial networks},  author={Hu, Hailong and Pang, Jun},  booktitle={Proceedings of the 37th Annual Computer Security Applications Conference},  pages={1--16},  year={2021}}",
+        "isDownloaded": false
+    },
+    "224": {
+        "title": "Model extraction attacks on recurrent neural networks",
+        "bibtex": "@article{takemura2020model,  title={Model extraction attacks on recurrent neural networks},  author={Takemura, Tatsuya and Yanai, Naoto and Fujiwara, Toru},  journal={Journal of Information Processing},  volume={28},  pages={1010--1024},  year={2020},  publisher={Information Processing Society of Japan}}",
+        "isDownloaded": false
+    },
+    "225": {
+        "title": "A comprehensive defense framework against model extraction attacks",
+        "bibtex": "@article{jiang2023comprehensive,  title={A comprehensive defense framework against model extraction attacks},  author={Jiang, Wenbo and Li, Hongwei and Xu, Guowen and Zhang, Tianwei and Lu, Rongxing},  journal={IEEE Transactions on Dependable and Secure Computing},  year={2023},  publisher={IEEE}}",
+        "isDownloaded": false
+    }
+}

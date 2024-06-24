@@ -13,8 +13,8 @@ from bs4 import BeautifulSoup
 excel_file_path = fr'C:\Users\Simon\Desktop\CBG\ReadingTaskAll.xlsx'
 output_dir_path = fr'C:\Users\Simon\Desktop\CBG\PDFs'
 logs_dir_path = fr'C:\Users\Simon\Desktop\CBG\LogFiles'
-oxyUser = "RaCheck"
-oxyPW = "RaCheck123"
+oxyUser = "customer-CBG443_0TVYT"
+oxyPW = "Aa1234567890"
 
 proxies = None
 log_file = None
